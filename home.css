@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    flex-direction: row;
+    height: 4rem;
+    width: 100%;
+    background-color:red ;
+    justify-content: space-between;
+    position:fixed;
+    overflow: hidden;
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 10rem;
+    margin-right: 2rem;
+    list-style: none;
+}
+li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+body{
+    margin: 0;
+    padding: 0;
+} 
+ 
