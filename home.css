@@ -1,0 +1,14 @@
+.container{
+    border: 1px solid black;
+    height: 100rem;
+    padding: 1rem 0.5rem;
+}
+
+.card-title{
+    display: flex;
+    flex-direction: column;
+border: 1px solid red;
+height: 2.5rem;
+text-align: center;
+
+}
