@@ -10,3 +10,35 @@ body{
     margin: 0;
     padding: 0;
 }
+
+/************* Footer************/
+
+footer{
+    display: flex;
+    /* justify-content: space-around; */
+    background-color: var(--primary-color);
+    font-family: var(--raleway);
+    color: white;
+    height: fit-content;
+}
+
+footer img{
+    height: 1.5rem;
+    padding: 0.1rem;
+}
+
+#footer-menu,#footer-list, #footer-CGU{
+    display: flex;
+    flex-direction: column;
+    background-color: #05204A;
+    width: 33%;
+}
+
+#footer-icones{
+    display: flex;
+    align-items: center;
+
+}
+div>h3,p{
+    text-align: center;
+}
