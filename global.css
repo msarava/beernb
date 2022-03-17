@@ -15,23 +15,36 @@ body{
 
 footer{
     display: flex;
-    /* justify-content: space-around; */
+    justify-content: space-evenly;
     background-color: var(--primary-color);
     font-family: var(--raleway);
     color: white;
     height: fit-content;
+    
 }
 
-footer img{
+#main-logo{
+    height: 3rem;
+    padding: 0.5rem; 
+}
+
+#logo-title{
+    display: flex;
+    justify-content: center;
+}
+
+#footer-icones img{
     height: 1.5rem;
     padding: 0.1rem;
 }
-
+#footer-list{
+    margin: 0;
+}
 #footer-menu,#footer-list, #footer-CGU{
     display: flex;
     flex-direction: column;
     background-color: #05204A;
-    width: 33%;
+    /* width: 33%; */
 }
 
 #footer-icones{
