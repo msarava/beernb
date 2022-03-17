@@ -13,12 +13,14 @@ nav {
 }
 .titlenav{
     color: var(--secondary-color);
-    font-size: 1rem;
+    font-size: 1.2rem;
     display: flex;
     flex-direction: row;
     align-items: center;
-    visibility: hidden;
+    opacity: 0%;
+    flex-grow: 1;
 }
+
 ul{
     display: flex;
     flex-direction: row;
@@ -69,7 +71,10 @@ li a{
     color:white;
     letter-spacing: 5px;
     padding:1.5rem;
-    
+    transition: 0.4s;
+}
+.title:hover{
+    transform: scale(1.1);
 }
 .para{
     font-family: var(--roboto);
@@ -134,7 +139,7 @@ li a{
         background-size: cover;
         background-position: center;
         width: 100%;
-        height:calc(100vh - 4rem);
+        height:100vh;
     }
     .scroll{
         height:15rem;
