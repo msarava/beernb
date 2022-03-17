@@ -7,6 +7,7 @@ nav {
     background-color: var(--primary-color) ;
     justify-content: space-between;
     overflow: hidden;
+    font-family: var(--roboto);
 }
 ul{
     display: flex;
@@ -41,24 +42,34 @@ li a{
     height:calc(100vh - 4rem);
     display: flex;
     align-items: flex-end;
-    justify-content: space-around;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    gap: 9rem;
+    text-align: center;
 }
 .scroll{
-    height:20rem;
+    height: 17rem;
     width: 15rem;
 }
-
+.title{
+    font-family: var(--roboto);
+    font-size: 3rem;
+    font-weight: 600;
+    color:white;
+    letter-spacing: 5px;
+    padding:1.5rem;
+    
+}
+.para{
+    font-family: var(--roboto);
+    font-size: 1.5rem;
+    font-weight: 40px;
+    color:white;
+    letter-spacing: 2px;
+}
   @media only screen and (min-width: 600px) {
-    nav {
-        display: flex;
-        flex-direction: row;
-        height: 4rem;
-        width: 100%;
-        background-color:green; 
-        justify-content: space-between;
-        
-        overflow: hidden;
-    }
+
     .dropdown{
         visibility:visible;
         width:10rem;
@@ -108,13 +119,15 @@ li a{
       .lidistrict{
           visibility: hidden;
       }
-    
     .hereos{
-        background-image:url("/assets/toulouse_cover.jpg") ;
+        background-image:url("/assets/thomas-despeyroux-FOr1dBCQs4U-unsplash.jpg") ;
         background-size: cover;
         background-position: center;
         width: 100%;
         height:calc(100vh - 4rem);
     }
-  
+    .scroll{
+        height:15rem;
+        width: 12rem;
+    }
     }
