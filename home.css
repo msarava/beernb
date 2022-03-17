@@ -6,7 +6,6 @@ nav {
     width: 100%;
     background-color: var(--primary-color) ;
     justify-content: space-between;
-    position:fixed;
     overflow: hidden;
 }
 ul{
@@ -34,6 +33,21 @@ li a{
     color: white;
     
 }
+.hereos{
+    background-image:url("/assets/linus-mimietz-QEpofCLA8wA-unsplash.jpg") ;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height:calc(100vh - 4rem);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.scroll{
+    height:20rem;
+    width: 15rem;
+}
+
   @media only screen and (min-width: 600px) {
     nav {
         display: flex;
@@ -42,7 +56,7 @@ li a{
         width: 100%;
         background-color:green; 
         justify-content: space-between;
-        position:fixed;
+        
         overflow: hidden;
     }
     .dropdown{
@@ -94,14 +108,13 @@ li a{
       .lidistrict{
           visibility: hidden;
       }
+    
+    .hereos{
+        background-image:url("/assets/toulouse_cover.jpg") ;
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        height:calc(100vh - 4rem);
     }
-.hereos{
-    display:flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-}
-.bg{
-    height: calc(100vh - 4rem);
-
-}
+  
+    }
