@@ -33,23 +33,27 @@ footer{
     justify-content: center;
 }
 
-#footer-icones img{
-    height: 1.5rem;
-    padding: 0.1rem;
+#logo-twitter, #logo-facebook, #logo-instagram{
+    height: 3rem;
+
 }
+
 #footer-list{
-    margin: 0;
+    margin-bottom: 3rem;
 }
 #footer-menu,#footer-list, #footer-CGU{
     display: flex;
     flex-direction: column;
     background-color: #05204A;
-    /* width: 33%; */
+    width: 33%;
+    align-items: center;
+    justify-content:center;
 }
 
 #footer-icones{
     display: flex;
     align-items: center;
+    gap: 1rem;
 
 }
 div>h3,p{
