@@ -165,3 +165,68 @@ body{
     width: 100%;
     margin: 0.5rem;
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #05204A;
+    color: white;
+}
+
+.container-chope {
+    width : 150px;
+    min-width: 20%;
+}
+
+.chope {
+display : flex;
+}
+
+.imgchope {
+    width: 4rem;
+    height : 4rem;
+    border-radius: 0.5rem;
+}
+
+
+.vertical_menu {
+    display: block;
+}
+
+.photos_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 20%;
+}
+
+.imgFacebook{
+    width: 2rem;
+    height : 2rem;
+    border-radius: 0.5rem;
+}
+
+.imgInsta {
+    width: 2rem;
+    height : 2rem;
+    border-radius: 0.5rem;
+}
+
+
+.imgTwitter {
+    width: 2rem;
+    height : 2rem;
+    border-radius: 0.5rem;
+}
+
+
+.CGU {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 20%;
+    align-items: center;
+    }
