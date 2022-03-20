@@ -1,13 +1,23 @@
 const title = document.querySelector('.titlenav');
-
+const containerImage = document.querySelector('.card:hover');
 window.addEventListener('scroll', function(){
     var scroll = this.scrollY;
-    console.log(scroll)
+    
     if (scroll > 400){
     title.style.opacity = `${scroll - 400}%`;}
     else{
         title.style.opacity = `0%`;
     }
+})
+window.addEventListener('scroll', function(){
+    var scroll = this.scrollY;
+    console.log(scroll);
+    if (scroll > 50){
+    containerImage.style.transform = 'scale(1.0)';}
+    else{
+        containerImage.style.transform = 'scale(1.1)';
+    }
+    
 })
 
             var lat = 43.597643165207685;
