@@ -184,10 +184,27 @@
     padding:0.5rem 1rem;
        
 }
+.user-comment-box{
+    display:flex;
+    justify-content: space-between;
+    border-radius: 2rem;
+    border: 1px solid var(--secondary-color);
+    width: 90%;
+    height:2.5rem;
+    padding:0.5rem 1rem;
+    flex-direction: row-reverse;
+       
+}
 .profile-com{
     display: flex;
     flex-direction: row;
 }
+.user-profile-com{
+   display: flex;
+    flex-direction: row-reverse;
+    gap:10px
+    }
+
 
 .profile-pic{
     height: 2rem;
@@ -197,8 +214,15 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: red;
+    align-items: flex-start;
+    
+}
+.user-profile-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+  
 }
 .profil-nom{
     font-family: var(--raleway);
@@ -218,6 +242,11 @@
     align-items: center;
     font-family: var(--raleway);
     margin: 0;
+    overflow-y: scroll;
+    max-width: 200px;
+    max-height: 50px;
+    flex-direction: column;
+    justify-content: flex-start;
 
 }
 .commentaire p{
@@ -369,7 +398,6 @@ font-family: var(--raleway);
     }
     .event-card2{
         margin: 0.7rem;
-       
         width:33.3%; 
         transition: 0.4s;
     }

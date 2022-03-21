@@ -34,35 +34,45 @@ const firstname = document.getElementById('name-input')
 const commentary = document.querySelector('#comment-area')
 const parentdiv = document.querySelector('#comment-container')
 const btn = document.querySelector('#btn-standard');
+const countCommentary = document.querySelector('#count-commentary')
+let countClick = 2
+countCommentary.innerText = countClick;
 btn.addEventListener("click", function(){
- const newComment = document.createElement("div")
-        newComment.classList.add("comment-box");
+ 
+    const newComment = document.createElement("div")
+        newComment.classList.add("user-comment-box");
         parentdiv.appendChild(newComment);
-  const profileCom = document.createElement('div');
-         profileCom.classList.add('profile-com');
-         newComment.appendChild(profileCom);
-  const profilPicture = document.createElement('img');
-         profilPicture.classList.add('profile-pic');
-         profilPicture.src='assets/circle-pic-2.png'
-         profileCom.appendChild(profilPicture);
-    const profilDetails = document.createElement('div');
-        profilDetails.classList.add('profile-details');
-        profileCom.appendChild(profilDetails);
-    const profilName = document.createElement('p');
-    profilName.classList.add('profil-nom');
-    profilName.innerText = firstname.value;
-    profilDetails.appendChild(profilName)
   
-    const profilDate = document.createElement('p');
-    profilDate.classList.add('profil-date');
-    profilDate.innerText = '40 decembre';
-    profilDetails.appendChild(profilDate)
+        const profileCom = document.createElement('div');
+        profileCom.classList.add('user-profile-com');
+        newComment.appendChild(profileCom);
   
+        const profilPicture = document.createElement('img');
+        profilPicture.classList.add('profile-pic');
+        profilPicture.src='assets/circle-pic-2.png'
+        profileCom.appendChild(profilPicture);
     
-
-
+        const profilDetails = document.createElement('div');
+        profilDetails.classList.add('user-profile-details');
+        profileCom.appendChild(profilDetails);
+    
+        const profilName = document.createElement('p');
+        profilName.classList.add('profil-nom');
+        profilName.innerText = firstname.value;
+        profilDetails.appendChild(profilName)
+    
+        const profilDate = document.createElement('p');
+        profilDate.classList.add('profil-date');
+        profilDate.innerText = '40 decembre';
+        profilDetails.appendChild(profilDate)
+    
         const commentaryBox = document.createElement("div");
         commentaryBox.classList.add('commentaire')
         commentaryBox.innerText = commentary.value
         newComment.appendChild(commentaryBox);
+        
+        countClick += 1;
+        countCommentary.innerText = countClick;
+
+  
 })
