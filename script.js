@@ -34,9 +34,20 @@ window.addEventListener('scroll', function(){
 
 const btnShow = document.querySelector(".btn-show-more");
 const hiddenComment = document.querySelector(".hidden-comment");
+let hidden=true;
 
 btnShow.addEventListener("click", function(){
-    hiddenComment.classList.toggle("hidden-comment");
+    if(hidden===true){
+        hiddenComment.classList.toggle("hidden-comment");
+        btnShow.innerHTML="afficher moins";
+        hidden=false;  
+    }
+    else{
+        hiddenComment.classList.toggle("hidden-comment");
+        btnShow.innerHTML="afficher plus";
+        hidden=true;  
+    }
+    
 });
 
 
