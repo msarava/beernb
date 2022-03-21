@@ -36,7 +36,7 @@ const btnShow = document.querySelector(".btn-show-more");
 const hiddenComment = document.querySelector(".hidden-comment");
 
 btnShow.addEventListener("click", function(){
-    hiddenComment.classList.toggle("visible");
+    hiddenComment.classList.toggle("hidden-comment");
 });
 
 
