@@ -59,7 +59,7 @@ const parentdiv = document.querySelector('#comment-container');
 const btn = document.querySelector('#btn-standard');
 
 
-let counterNumber =2; // compteur de commentaire initialisé à 2
+let counterNumber =3; // compteur de commentaire initialisé à 2
 
 //TODO : empecher la validation du formulaire si pas de nom/msg
 
