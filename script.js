@@ -45,17 +45,9 @@ btn.addEventListener("click", function(){
          profilPicture.classList.add('profile-pic');
          profilPicture.src='assets/circle-pic-2.png'
          profileCom.appendChild(profilPicture);
-     
-  
-  
-  
-         const profilDetails = document.createElement('div');
+    const profilDetails = document.createElement('div');
         profilDetails.classList.add('profile-details');
         profileCom.appendChild(profilDetails);
-    
-
-
-
     const profilName = document.createElement('p');
     profilName.classList.add('profil-nom');
     profilName.innerText = firstname.value;
