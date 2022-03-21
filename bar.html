@@ -84,22 +84,70 @@
         </div>
 
     </section>
-
-
-
-
-    <div class="comment-box">
-        <img class="profile-pic" src="assets/circle-pic-2.png" alt="profile picture1" />
-        <p>exemple de commentaire</p>
+    <hr class="hr">
+<section id="comment-container">
+    <div class="comment-counter">
+        <img id="star-comment" src="assets/star.png" alt="star evaluation">
+        <h2>5 - <span id="count-commentary"> </span> Commentaires</h2>
     </div>
 
-    <form class="form-comment">
-        <div>
-            <input type="text" placeholder="Votre nom">
-            <textarea placeholder="Votre commentaire ici"></textarea>
+    <div class="comment-box">
+        <div class="profile-com">
+            <img class="profile-pic" src="assets/circle-pic-2.png" alt="profile picture2" />
+            <div class="profile-details">
+                <p class="profil-nom">Cynthia</p>
+                <p class="profil-date"> 20 décembre</p>
+            </div>
         </div>
-        <a class="btn-standard" href="#">envoyer</a>
+        <div class="commentaire">
+            <p>Super ambiance !</p>
+        </div>
+    </div>
+    
+    <div class="comment-box">
+        <div class="profile-com">
+            <img class="profile-pic" src="assets/circle-pic-1.png" alt="profile picture1" />
+            <div class="profile-details">
+                <p class="profil-nom">Bastien</p>
+                <p class="profil-date"> 29 février</p>
+            </div>
+        </div>
+        <div class="commentaire">
+            <p>Il est des nôootre, il a bu ...</p>
+        </div>
+    </div>
+
+</section> 
+    <div id="btn-container">
+            <a id="btn-show-more" href="#">afficher plus ></a>
+    </div>
+
+
+   
+<section id="form-section">
     </form>
+    <form id="form-container">
+        <div id="form-en-tete">
+            <div id="star-eval">
+              <img id= star1 class= "star-note" src="assets/star-border.png"/>
+              <img id= star2 class= "star-note" src="assets/star-border.png"/>
+              <img id= star3 class= "star-note" src="assets/star-border.png"/>
+              <img id= star4 class= "star-note" src="assets/star-border.png"/>
+              <img id= star5 class= "star-note" src="assets/star-border.png"/>
+          </div>
+            <div id="form-comment-input">
+                <p>Nom :</p>
+                <input id="name-input" type="text" placeholder="Votre nom">
+            </div>  
+          </div>
+        <textarea id="comment-area" placeholder="Votre commentaire ici"></textarea>
+</section>
+<div id="btn-container">
+    <a class="btn-standard" id="btn-standard">Envoyer</a>
+</div> 
+  
+
+
 
 
 </body>
