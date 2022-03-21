@@ -159,13 +159,13 @@
     
 }
 
-.comment-counter{
+#comment-counter{
     display: flex;
     padding: 0.5rem 1rem;
     width: 90%;
 }
 
-.comment-counter h2{
+#comment-counter h2{
     font-family: var(--raleway);
     font-size: 1.2rem;
     margin: 0;
@@ -196,16 +196,16 @@
 .profile-details{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: red;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
 }
-.profil-nom{
+.profile-nom{
     font-family: var(--raleway);
     font-size: 1.2rem;
     font-weight: bold;
     margin: 0;
-}.profil-date{
+}.profile-date{
     font-family: var(--raleway);
     font-size: 1rem;
     font-weight: bold;
@@ -220,11 +220,12 @@
     margin: 0;
 
 }
-.commentaire p{
-    margin: 0;
+
+.hidden-comment{
+    display: non;
 }
 
-#btn-show-more{
+.btn-show-more{
     font-family: var(--roboto);
     color: var(--secondary-color);
     padding: 0.1rem 0.5rem ; 
@@ -232,17 +233,17 @@
     border-radius: 1rem;
     text-decoration: none;
     width: fit-content;
-    /* margin: 1rem; */
 }
 
-#btn-btn-show-more:active{
+.btn-show-more:active{
     background-color: var(--secondary-color);
     color: white;
 }
 
-#btn-container{
+#btn-show-container{
     display:flex;
     justify-content: center;
+    margin: 0.2rem 1rem 1rem 1rem;
 }
 
 
