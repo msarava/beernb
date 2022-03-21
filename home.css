@@ -162,6 +162,8 @@ body{
     background-color: #fcfcfcc2;
 }
 
+/* **********Lucas - cards ************* */
+
 .card {
     display: flex;
     flex-direction: column;
@@ -220,11 +222,7 @@ body{
     
 }
 
-.card {
-   
-}
-
-}
+/* ********************************************* */
 
 
 
