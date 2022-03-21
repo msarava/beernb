@@ -216,10 +216,6 @@ body{
 }
 
 @media screen and (min-width: 600px) {
-
-.container {
-    display: grid;
-    
 }
 
 /* ********************************************* */
