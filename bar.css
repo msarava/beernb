@@ -20,14 +20,13 @@
 }
 .hr {
     border : var(--secondary-color) 1px solid;
-    width:30%;
+    width:50%;
 }
 .info {
     display: flex;
     flex-direction: column;
     align-items:center;
-    font-family: var(--raleway);
-    
+    font-family: var(--raleway); 
 }
 .info h1 {
     color:var(--secondary-color);
@@ -42,14 +41,27 @@
     display: flex;
     flex-direction: column;
     overflow:hidden;
-
     height: 80vh;
     margin:1rem
 }
-.event-card{
+.event-card2{
     margin: 0.7rem;
     height: 33%;
     background: url(assets/pexels-mark-angelo-sampan-1587927.jpg);
+    border-radius:1rem;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    overflow: hidden;
+    box-shadow: 0 0 15px 2px rgba(0,0,0,0.25);
+}
+
+
+.event-card1{
+    margin: 0.7rem;
+    height: 33%;
+    background: url(assets/wide-shot-bottles-glasses-display-cabinet-bar-scandic-hotel-copenhagen-denmark_181624-2920.jpg);
     border-radius:1rem;
     background-size: cover;
     display: flex;
@@ -65,11 +77,19 @@
    background: transparent;
    justify-content:space-around;
    position: relative;
-   align-items:center;
+   align-items:flex-end;
    height:30%;
+   color: var(--primary-color);
    
 }
-
+.title-event{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: var(--raleway); 
+    font-size:12px;
+    color: var(--secondary-color);
+}
 .event-info::before{
     content: "";
     position: absolute;
@@ -83,30 +103,37 @@
 }
 .event-name{
     position:relative;
-    margin-bottom: 19px;
-    margin-top:0;
-    color: white;
-    margin-right: 80px;
+    text-align: left;
     letter-spacing: 2px;
 }
 .event-date{
-    display : grid;
+    display : flex;
+    flex-direction: column;
     position:relative;
     background-color:var(--primary-color);
-    color: white;
+    color: var(--secondary-color);
     margin-bottom: 19px;
     margin-top:0;
     height:50px;
     width:50px;
     text-align: center;
-    font-size: 1rem;
-    
+    font-size: 0.6rem;
+    border-radius: 8px;
+  
 }
-.event-date h2{
-        font-size: 1rem;
-        margin:0
+.day{
+    margin:0;
+    margin-left:2px;
+    align-self: flex-start;
 }
-
+.month{
+    margin: 0;
+    margin-right: 3px;
+    align-self: flex-end;
+}
+.and{
+    margin:0;
+}
 .btn-standard{
     font-family: var(--roboto);
     background-color: var(--secondary-color);
@@ -175,7 +202,7 @@ width: 90%;
     }
     .info h1 {
         color:var(--secondary-color);
-        font-family: var(--roboto);
+        font-family: var(--railway);
         margin: 0.6rem;
     }
     .info {
@@ -189,5 +216,52 @@ width: 90%;
         width:70%;
         margin-top:1rem;
     }
-
+    .event{
+        display: flex;
+        flex-direction:row;
+        justify-content:space-around;
+        overflow:hidden;
+        height: 80vh;
+        margin:1rem
+    }
+    .event-card1{
+        margin: 0.7rem;
+        height: 33%;
+        width:33.3%;
+        
+    }
+    .event-card2{
+        margin: 0.7rem;
+        height: 33%;
+        width:33.3%; 
+    }
+    .event-info{
+        display: flex;
+        flex-direction: row;
+        background: transparent;
+        justify-content:space-evenly;
+        position: relative;
+        align-items:flex-end;
+        height:30%;
+        color: var(--primary-color);
+        align-items: stretch;
+     }
+     .event-name{
+        position:relative;
+        text-align: left;
+        letter-spacing: 2px;
+        margin-left: 7rem;
+        height:50px;
+    }
+    .title-event{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        font-family: var(--raleway); 
+        font-size:1.2rem;
+        color: var(--secondary-color);
+    }
+    .title-event h1{
+        margin:0.6rem;
+    }
     }
