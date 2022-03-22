@@ -5,7 +5,13 @@ h2 {
     background-color: rgba(252, 252, 252, 0.8);
     margin: 0;
     padding: 0.5rem;
+    
 }
+.card-title.dark{
+    color:white;
+    background-color:#121212be;
+}
+
 nav {
     display: flex;
     flex-direction: row;
@@ -197,7 +203,10 @@ body{
     text-decoration: none;
     color: var(--primary-color);
 }
-
+.button-card.dark{
+    background-color:#121212be;
+    color:white;
+}
 .card-carmes {
     background-image: url(assets/Les\ Carmes-Esquirol\ -\ 31555\ -\ 300180--.jpg);
 }
