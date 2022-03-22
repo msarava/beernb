@@ -421,7 +421,11 @@ font-family: var(--raleway);
         align-items:flex-end;
         height:30%;
         color: var(--primary-color);
-        align-items: stretch;
+        align-items: stretch; 
+        background: rgba(255, 255, 255, 0.541);
+        align-items:center;
+        font-family: var(--montserrat); 
+        
      }
      .event-name{
         position:relative;
@@ -434,7 +438,7 @@ font-family: var(--raleway);
         display: flex;
         flex-direction: column;
         align-items:center;
-        font-family: var(--raleway); 
+        
         font-size:1.2rem;
         color: var(--secondary-color);
     }
