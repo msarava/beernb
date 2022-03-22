@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<title>Beernb - home</title>
+<link rel="stylesheet" href="bar.css">
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.1/dist/leaflet.css"
+    integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ=="
+    crossorigin="" />
+
+<script src="bar.js" defer></script>
+<script src="https://unpkg.com/leaflet@1.3.1/dist/leaflet.js"
+    integrity="sha512-/Nsx9X4HebavoBvEBuyp3I7od5tA0UzAxs+j83KgC8PU0kgB4XiK4Lfe4y4cgBtaRJQEIFCW+oC506aPT2L1zw=="
+    crossorigin="" defer></script>
+</head>
+
+<body>
+    <nav>
+       <img class='logo' src="/assets/logobeer_white.png" > 
+        <h1 class="titlenav">Beernb </h1>
+        <ul>
+            <li class="lidistrict"><a href="">Quartier</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Quartier</a>
+                <div class="dropdown-content">
+                    <a href="#">St Cyprien</a>
+                    <a href="#">Carmes</a>
+                    <a href="#">Capitole</a>
+                    <a href="#">St Pierre</a>
+                </div>
+            </li>
+            <li><a href="">Contact</a></li>
+        </ul>
+        <label class="switch">
+            <input id='btn-darkmode'type="checkbox" >
+            <span class="slider round"></span>
+        </label>
+
+    </nav>
+    <section class="hereos">
+        <div class="card">
+        </div>
+    </section>
+    <section class="corps">
+
+        <div class="info">
+            <hr class="hr">
+            <h1>The Smoking Barrel</h1>
+            <hr class="hr">
+            <p>Bar d’ambiance au cœur du quartier Saint Cyp, belle carte de cocktails, originales bières pression et
+                vins du sud ouest tapas maison et de saisons .L’ambiance y est joviale et chaleureuse !</p>
+            <p>Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 5 Pl. Jean Diebold, 31300 <br>
+                Téléphone : 05 31 22 32 95</p>
+
+        </div>
+        <section class="containermap">
+            <div id="map">
+            </div>
+        </section>
+    </section>
+    <hr class="hr">
+    <div class="title-event"> <h1> Évènement </h1></div>
+    <hr class="hr">
+    <section class="event">
+        <div class="event-card1">
+            <div class="event-info">
+                <div class="event-date">
+                    <h2 class="day">31</h2>
+                    <h2 class="and">/</h2>
+                    <h2 class="month">03</h2>
+                </div>
+                <h2 class="event-name"> Happy Hour </h2>
+                <div class="event-color"></div>
+            </div>
+        </div>
+        <div class="event-card2">
+            <div class="event-info">
+                <div class="event-date">
+                    <h2 class="day">01</h2>
+                    <h2 class="and">/</h2>
+                    <h2 class="month">04</h2>
+                </div>
+                <h2 class="event-name">Concert</h2>
+                <div class="event-color"></div>
+            </div>
+        </div>
+        </div>
+
+    </section>
+    <hr class="hr">
+<section id="comment-container">
+    <div id="comment-counter">
+        <img id="star-comment" src="assets/star.png" alt="star evaluation">
+<!-- <<<<<<< HEAD -->
+        <h2 class="counter-title">5 - 3 Commentaires</h2>
+<!-- =======
+        <h2>5 - <span id="count-commentary"> </span> Commentaires</h2>
+>>>>>>> 7dda1692c61c44d7bdb08b859adfaa210dd711be -->
+    </div>
+
+    <div class="comment-box">
+        <div class="profile-com">
+            <img class="profile-pic" src="assets/circle-pic-2.png" alt="profile picture2" />
+            <div class="profile-details">
+                <p class="profile-nom">Cynthia</p>
+                <p class="profile-date"> 20 décembre</p>
+            </div>
+        </div>
+        <div class="commentaire">
+            <p>Super ambiance !</p>
+        </div>
+    </div>
+    
+    <div class="comment-box">
+        <div class="profile-com">
+            <img class="profile-pic" src="assets/circle-pic-1.png" alt="profile picture1" />
+            <div class="profile-details">
+                <p class="profile-nom">Bastien</p>
+                <p class="profile-date"> 29 février</p>
+            </div>
+        </div>
+        <div class="commentaire">
+            <p>Diantre, elle était fraiche !</p>
+        </div>
+    </div>
+    <div class="comment-box hidden-comment">
+        <div class="profile-com">
+            <img class="profile-pic" src="assets/circle-pic-4.png" alt="profile picture4" />
+            <div class="profile-details">
+                <p class="profile-nom">Harry</p>
+                <p class="profile-date"> 01 avril</p>
+            </div>
+        </div>
+        <div class="commentaire">
+            <p>Potions bonnes et amères</p>
+        </div>
+    </div>
+</section> 
+    <div id="btn-show-container">
+            <a class="btn-show-more">afficher plus ></a>
+    </div>
+
+
+   
+<section id="form-section">
+    </form>
+    <form id="form-container">
+        <div id="form-en-tete">
+            <div id="star-eval">
+              <img id= star1 class= "star-note" src="assets/star-border.png"/>
+              <img id= star2 class= "star-note" src="assets/star-border.png"/>
+              <img id= star3 class= "star-note" src="assets/star-border.png"/>
+              <img id= star4 class= "star-note" src="assets/star-border.png"/>
+              <img id= star5 class= "star-note" src="assets/star-border.png"/>
+          </div>
+            <div id="form-comment-input">
+                <p>Nom :</p>
+                <input id="name-input"  type="text" placeholder="Votre nom">
+            </div>  
+          </div>
+        <textarea id="comment-area" placeholder="Votre commentaire ici"></textarea>
+</section>
+<div id="btn-container">
+    <a class="btn-standard" id="btn-standard">Envoyer</a>
+</div> 
+  
+
+
+
+
+</body>
+
+</html>
