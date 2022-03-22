@@ -197,6 +197,7 @@
 .profile-com{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .user-profile-com{
    display: flex;
@@ -251,10 +252,11 @@
     max-width: 200px;
     max-height: 50px;
     flex-direction: column;
-    justify-content: flex-start;
-
+    justify-content: center;
 }
-
+.commentaire p{
+    margin: 0;
+}
 .hidden-comment{
     display: none;
 }
@@ -295,7 +297,7 @@
     border-radius: 1rem;
     gap: 1rem;
     min-height: 200px;
-    padding: 0.5rem;
+    padding: 0 0.5rem 0.8rem 0.8rem;
     width: 90%;
 }
 #form-en-tete{
@@ -380,6 +382,10 @@ font-family: var(--raleway);
     z-index: 2;
 
 }
+
+
+/******************** Passage Mobile vers Desktop ********************/
+
 @media only screen and (min-width: 600px) {
     .card{
         background-image :url(assets/smoking-barrel-high.jpg);
@@ -467,4 +473,20 @@ font-family: var(--raleway);
     .title-event h1{
         margin:0.6rem;
     }
+
+    .comment-box{
+        width: 70%;
     }
+    #form-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+    #form-container{
+        width: 70%;
+    }
+    .star-note{
+    height: 2rem;
+}
+}
