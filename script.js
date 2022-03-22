@@ -98,7 +98,9 @@ btn.addEventListener("click", function(){
     //Ajout du commentaire final
     const commentaryBox = document.createElement("div");
     commentaryBox.classList.add('commentaire');
-    commentaryBox.innerText = commentary.value;
+    const commentaryText = document.createElement("p");
+    commentaryText.innerText = commentary.value;
+    commentaryBox.appendChild(commentaryText);
     newComment.appendChild(commentaryBox);
 
     // Incrémentation compteur

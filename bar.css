@@ -198,6 +198,7 @@
 .profile-com{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .user-profile-com{
    display: flex;
