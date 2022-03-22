@@ -328,16 +328,38 @@ font-family: var(--raleway);
     border-radius: 2rem;
     max-width: 65%;
     padding: 0 0.3rem;
+    color:white;
 }
+#name-input.dark{
+    background:#121212;
+    transition: 1s;
+}
+#name-input::placeholder {
+    color: black;
+    font-size: 1em;
+  }
+#name-input.dark::placeholder {
+    color:white;
+    transition: 1s;
+  }
 #comment-area{
     border: 1px solid var(--secondary-color);
     border-radius: 1rem;
     min-height: 100px;
     width: 90%;
     padding: 1rem;
-
 }
-
+#comment-area.dark{
+    background:#121212;
+    transition:1s;
+}
+#comment-area::placeholder{
+    color: black;
+}
+#comment-area.dark::placeholder{
+   transition:1s;
+    color: white;
+}
 #btn-container{
     display: flex;
     justify-content: flex-end;
