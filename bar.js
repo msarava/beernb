@@ -117,15 +117,17 @@ commentCounter.innerHTML=`5 - ${counterNumber} Commentaires`;
 commentary.value = "";
 firstname.value = "";
 })
+const burgerBg = document.querySelector('.menu__box');
 btnDarkMode.addEventListener('click', function(){
     var element = document.body;
     element.classList.toggle("dark-mode");
     firstname.classList.toggle("dark");
     commentary.classList.toggle("dark");
+    burgerBg.classList.toggle('dark')
 });
 const btnRainbow = document.querySelector('#btn-rainbowmode');
 const cardsBtn = document.querySelectorAll('.button-card')
-const burgerBg = document.querySelector('.menu__box')
+
 btnRainbow.addEventListener('click', function(){
     burgerBg.classList.toggle('wrapper');
     var element = document.body;
