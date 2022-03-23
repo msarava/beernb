@@ -41,4 +41,6 @@ btnRainbow.addEventListener('click', function(){
         btn.classList.toggle('wrapper');
     }
     nav.classList.toggle('wrapper');
+    var element = document.body;
+    element.classList.toggle("wrapper");
 })
