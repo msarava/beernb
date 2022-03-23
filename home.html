@@ -15,9 +15,10 @@
 <body>
 
     <nav>
-        <img class='logo' src="/assets/logobeer_white.png">
+       <a href="home.html" class="logolink">
+        <img class='logo' src="/assets/logobeer_white.png"> </a>
         <h1 class="titlenav">Beernb</h1>
-        <ul>
+        <ul class="ulnav" class="btnDistrict">
             <li class="lidistrict"><a href="">Quartier</a></li>
             <li class="dropdown">
                 <a class="dropbtn">Quartier</a>
@@ -30,17 +31,33 @@
             </li>
             <li><a href="">Contact</a></li>
         </ul>
-        <label class="switch">
-            <input id='btn-darkmode'type="checkbox" >
-            <span class="slider round"></span>
-        </label>
-
-
+     
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Home</a></li>
+                      <li><a class="menu__item" href="#">About</a></li>
+                      <li><a class="menu__item" href="#">Team</a></li>
+                      <li><a class="menu__item" href="#">Contact</a></li>
+                      <li><a class="menu__item" href="#">Twitter</a></li>
+                      <li><a class="menu__item">Mode Sombre</a><label class="switch">
+                         <input id='btn-darkmode'type="checkbox" >
+                        <span class="slider round"></span>
+                    </label></li>
+                    <li><a class="menu__item">Mode Rainbow</a><label class="switch">
+                        <input id='btn-rainbowmode'type="checkbox" >
+                       <span class="slider round"></span>
+                   </label></li>
+                    </ul>
+            </div>
     </nav>
 
    
     <div class="hereos">
-        <h1 class="title"> Beernb
+         <h1 class="title"> Beernb
             <p class="para">Laissez-vous guider par votre soif</p>
         </h1>
         <img class="scroll" src="/assets/scroll.gif">
