@@ -1,0 +1,22 @@
+{
+  "name": "beernb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bar.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/msarava/beernb.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msarava/beernb/issues"
+  },
+  "homepage": "https://github.com/msarava/beernb#readme",
+  "dependencies": {
+    "w3c-html-validator": "^1.0.3"
+  }
+}
