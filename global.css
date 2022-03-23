@@ -18,6 +18,55 @@ body{
     background-color: rgb(34, 33, 33);
     color:white
 }
+
+/************* Footer************/
+
+footer{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--primary-color);
+    font-family: var(--raleway);
+    color: white;
+    height: fit-content;
+    
+}
+
+#main-logo{
+    height: 3rem;
+    padding: 0.5rem; 
+}
+
+#logo-title{
+    display: flex;
+    justify-content: center;
+}
+
+#logo-twitter, #logo-facebook, #logo-instagram{
+    height: 3rem;
+
+}
+
+#footer-list{
+    margin-bottom: 3rem;
+}
+#footer-menu,#footer-list, #footer-CGU{
+    display: flex;
+    flex-direction: column;
+    background-color: #05204A;
+    width: 33%;
+    align-items: center;
+    justify-content:center;
+}
+
+#footer-icones{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+}
+div>h3,p{
+    text-align: center;
+}
 /* Bar de Navigation */
 
 
