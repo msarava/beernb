@@ -19,7 +19,7 @@
 
 <body>
     <nav>
-       <img class='logo' src="/assets/logobeer_white.png" > 
+        <img class='logo' src="/assets/logobeer_white.png">
         <h1 class="titlenav">Beernb </h1>
         <ul>
             <li class="lidistrict"><a href="">Quartier</a></li>
@@ -34,10 +34,25 @@
             </li>
             <li><a href="">Contact</a></li>
         </ul>
-        <label class="switch">
-            <input id='btn-darkmode'type="checkbox" >
-            <span class="slider round"></span>
-        </label>
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+                <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="home.html">Home</a></li>
+                <li><a class="menu__item" href="#">Quartier</a></li>
+
+                <li><a class="menu__item">Mode Sombre</a><label class="switch">
+                        <input id='btn-darkmode' type="checkbox">
+                        <span class="slider round"></span>
+                    </label></li>
+                <li><a class="menu__item">Mode Rainbow</a><label class="switch">
+                        <input id='btn-rainbowmode' type="checkbox">
+                        <span class="slider round"></span>
+                    </label></li>
+            </ul>
+        </div>
 
     </nav>
     <section class="hereos">
@@ -62,7 +77,9 @@
         </section>
     </section>
     <hr class="hr">
-    <div class="title-event"> <h1> Évènement </h1></div>
+    <div class="title-event">
+        <h1> Évènement </h1>
+    </div>
     <hr class="hr">
     <section class="event">
         <div class="event-card1">
@@ -91,82 +108,82 @@
 
     </section>
     <hr class="hr">
-<section id="comment-container">
-    <div id="comment-counter">
-        <img id="star-comment" src="assets/star.png" alt="star evaluation">
-<!-- <<<<<<< HEAD -->
-        <h2 class="counter-title">5 - 3 Commentaires</h2>
-<!-- =======
+    <section id="comment-container">
+        <div id="comment-counter">
+            <img id="star-comment" src="assets/star.png" alt="star evaluation">
+            <!-- <<<<<<< HEAD -->
+            <h2 class="counter-title">5 - 3 Commentaires</h2>
+            <!-- =======
         <h2>5 - <span id="count-commentary"> </span> Commentaires</h2>
 >>>>>>> 7dda1692c61c44d7bdb08b859adfaa210dd711be -->
-    </div>
+        </div>
 
-    <div class="comment-box">
-        <div class="profile-com">
-            <img class="profile-pic" src="assets/circle-pic-2.png" alt="profile picture2" />
-            <div class="profile-details">
-                <p class="profile-nom">Cynthia</p>
-                <p class="profile-date"> 20 décembre</p>
+        <div class="comment-box">
+            <div class="profile-com">
+                <img class="profile-pic" src="assets/circle-pic-2.png" alt="profile picture2" />
+                <div class="profile-details">
+                    <p class="profile-nom">Cynthia</p>
+                    <p class="profile-date"> 20 décembre</p>
+                </div>
+            </div>
+            <div class="commentaire">
+                <p>Super ambiance !</p>
             </div>
         </div>
-        <div class="commentaire">
-            <p>Super ambiance !</p>
-        </div>
-    </div>
-    
-    <div class="comment-box">
-        <div class="profile-com">
-            <img class="profile-pic" src="assets/circle-pic-1.png" alt="profile picture1" />
-            <div class="profile-details">
-                <p class="profile-nom">Bastien</p>
-                <p class="profile-date"> 29 février</p>
+
+        <div class="comment-box">
+            <div class="profile-com">
+                <img class="profile-pic" src="assets/circle-pic-1.png" alt="profile picture1" />
+                <div class="profile-details">
+                    <p class="profile-nom">Bastien</p>
+                    <p class="profile-date"> 29 février</p>
+                </div>
+            </div>
+            <div class="commentaire">
+                <p>Diantre, elle était fraiche !</p>
             </div>
         </div>
-        <div class="commentaire">
-            <p>Diantre, elle était fraiche !</p>
-        </div>
-    </div>
-    <div class="comment-box hidden-comment">
-        <div class="profile-com">
-            <img class="profile-pic" src="assets/circle-pic-4.png" alt="profile picture4" />
-            <div class="profile-details">
-                <p class="profile-nom">Harry</p>
-                <p class="profile-date"> 01 avril</p>
+        <div class="comment-box hidden-comment">
+            <div class="profile-com">
+                <img class="profile-pic" src="assets/circle-pic-4.png" alt="profile picture4" />
+                <div class="profile-details">
+                    <p class="profile-nom">Harry</p>
+                    <p class="profile-date"> 01 avril</p>
+                </div>
+            </div>
+            <div class="commentaire">
+                <p>Potions bonnes et amères</p>
             </div>
         </div>
-        <div class="commentaire">
-            <p>Potions bonnes et amères</p>
-        </div>
-    </div>
-</section> 
+    </section>
     <div id="btn-show-container">
-            <a class="btn-show-more">afficher plus ></a>
+        <a class="btn-show-more">afficher plus ></a>
     </div>
 
 
-   
-<section id="form-section">
-    </form>
-    <form id="form-container">
-        <div id="form-en-tete">
-            <div id="star-eval">
-              <img id= star1 class= "star-note" src="assets/star-border.png"/>
-              <img id= star2 class= "star-note" src="assets/star-border.png"/>
-              <img id= star3 class= "star-note" src="assets/star-border.png"/>
-              <img id= star4 class= "star-note" src="assets/star-border.png"/>
-              <img id= star5 class= "star-note" src="assets/star-border.png"/>
-          </div>
-            <div id="form-comment-input">
-                <p>Nom :</p>
-                <input id="name-input"  type="text" placeholder="Votre nom">
-            </div>  
-          </div>
-        <textarea id="comment-area" placeholder="Votre commentaire ici"></textarea>
-</section>
-<div id="btn-container">
-    <a class="btn-standard" id="btn-standard">Envoyer</a>
-</div> 
-  
+
+    <section id="form-section">
+        </form>
+        <form id="form-container">
+            <div id="form-en-tete">
+                <div id="star-eval">
+                    <img id=star1 class="star-note" src="assets/star-border.png" />
+                    <img id=star2 class="star-note" src="assets/star-border.png" />
+                    <img id=star3 class="star-note" src="assets/star-border.png" />
+                    <img id=star4 class="star-note" src="assets/star-border.png" />
+                    <img id=star5 class="star-note" src="assets/star-border.png" />
+                </div>
+                <div id="form-comment-input">
+                    <p>Nom :</p>
+                    <input id="name-input" type="text" placeholder="Votre nom">
+                </div>
+            </div>
+            <textarea id="comment-area" placeholder="Votre commentaire ici"></textarea>
+    </section>
+    <div id="btn-container">
+        <a class="btn-standard" id="btn-standard">Envoyer</a>
+    </div>
+
 
 
 
