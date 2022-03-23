@@ -16,7 +16,7 @@ function initMap() {
 }
 window.onload = function(){
 // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-initMap(); 
+initMap(); utt
 };
 
 // MAJ de la liste des commentaites avec "afficher plus"
