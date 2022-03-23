@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     overflow:hidden;
-    margin: 5rem 1rem 1rem 1rem; 
+    
 }
 .card:hover{
     transform: scale(1.1);
@@ -14,7 +14,7 @@
     background-image: url(assets/19143272_1205279886242831_4465527839130197464_o.jpg);
     background-position: center;
     background-size: cover;
-    border-radius: 9px;
+    
     transition: 0.4s;
     
 }
@@ -213,22 +213,11 @@
 .profile-details{
     display: flex;
     flex-direction: column;
-/* <<<<<<< HEAD */
+
     justify-content: flex-start;
     align-items: flex-start;
     
-/* =======
-    justify-content: center;
-    align-items: flex-start;
-    
-}
-.user-profile-details{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-end;
-  
->>>>>>> 7dda1692c61c44d7bdb08b859adfaa210dd711be */
+
 }
 .profile-nom{
     font-family: var(--raleway);
@@ -337,7 +326,7 @@ font-family: var(--raleway);
     transition: 1s;
 }
 #name-input::placeholder {
-    color: black;
+    color: grey;
     font-size: 1em;
   }
 #name-input.dark::placeholder {
@@ -356,7 +345,7 @@ font-family: var(--raleway);
     transition:1s;
 }
 #comment-area::placeholder{
-    color: black;
+    color: grey;
 }
 #comment-area.dark::placeholder{
    transition:1s;

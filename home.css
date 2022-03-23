@@ -12,7 +12,7 @@ h2 {
 }
 
 .hereos{
-    background-image:url("/assets/linus-mimietz-QEpofCLA8wA-unsplash.jpg") ;
+    background-image:url("assets/maeva-vigier-mZkpzMI0RFQ-unsplash.jpg") ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -50,7 +50,7 @@ h2 {
 }
 @media only screen and (min-width: 600px) {
     .hereos{
-        background-image:url("/assets/thomas-despeyroux-FOr1dBCQs4U-unsplash.jpg") ;
+        background-image:url("assets/arthur-chauvineau-Tdz7oDwnHbE-unsplash.jpg") ;
         background-size: cover;
         background-position: center;
         width: 100%;
