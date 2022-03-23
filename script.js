@@ -39,4 +39,5 @@ btnRainbow.addEventListener('click', function(){
     for (let btn of cardsBtn) {
         btn.classList.toggle('wrapper');
     }
+    nav.classList.toggle('wrapper');
 })

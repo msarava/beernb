@@ -13,12 +13,8 @@ body{
     padding: 0;
     
 }
-.dark-mode {
-    transition: all 1s;
-    background-color: rgb(34, 33, 33);
-    color:white
-}
-/* Bar de Navigation */
+
+/************************* Bar de Navigation ****************************/
 nav {
     display: flex;
     flex-direction: row;
@@ -32,9 +28,9 @@ nav {
     top:0;
     left:0;
     z-index: 10000;
+    background-color:rgba(5 32 74 / 0%) ;
     
 }
-
 .titlenav{
     color: var(--secondary-color);
     font-size: 1.2rem;
@@ -44,30 +40,91 @@ nav {
     opacity: 0%;
     flex-grow: 1;
 }
+.ulnav{
+  display:none;
+}
+/***********************Menu Burger*******************/
+.menu__box li{
+  display: flex;
+}
+#menu__toggle {
+  opacity: 0;
+}
+#menu__toggle:checked + .menu__btn > span {
+  transform: rotate(45deg);
+}
+#menu__toggle:checked + .menu__btn > span::before {
+  top: 0;
+  transform: rotate(0deg);
+}
+#menu__toggle:checked + .menu__btn > span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  left: 0 !important;
+}
+.menu__btn {
+  position: fixed;
+ display:flex;
+ justify-content: flex-end;
+ align-items: center;
+ right: 10px;
+  width: 26px;
+  height: 26px;
+  cursor: pointer;
+  z-index: 1;
+}
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+.menu__box {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 300px;
+  height: 100%;
+  margin: 0;
+  padding: 80px 0;
+  list-style: none;
+  background-color: #eceff1d5;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
+  transition-duration: .25s;
 
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 10rem;
-    margin-right: 2rem;
-    list-style: none;
 }
-.dropdown{
-    visibility: hidden;
-    width: 0;
-  
+.menu__box.dark{
+  background-color:#121212be;
 }
-li{
-    display: flex;
-    flex-direction: row;
-    
+.menu__item {
+  display: block;
+  padding: 12px 24px;
+  color: #333;
+  font-family: var(--raleway);
+  color:var(--secondary-color);
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  transition-duration: 0.5s;
 }
-li a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
+
+.menu__item:hover {
+  background-color: #CFD8DC;
 }
 
 .switch {
@@ -122,7 +179,7 @@ input:checked + .slider:before {
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
+ 
 .slider.round {
     border-radius: 34px;
   }
@@ -130,76 +187,11 @@ input:checked + .slider:before {
 .slider.round:before {
     border-radius: 50%;
   }
-  
-  
-@media only screen and (min-width: 600px) {
-.dropdown{
-    visibility:visible;
-    width:10rem;
-  
-}
-ul{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 17rem;
-    margin-right: 2rem;
-    list-style: none;
-}
-li a{
-    list-style: none;
-    text-decoration: none;
-    color: white;
-}
-
-li.dropdown {
-    display: inline-block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: fixed;
-    background-color: rgba(255,255,255,0.50);
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-  
-  .dropdown-content a:hover {background-color: #f1f1f1;}
-  
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-  .lidistrict{
-      visibility: hidden;
-  }
-}
-.wrapper { 
-  color : linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    animation: gradient 2s ease infinite;
-}
-
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
+/***********************DarkMode et RainbowMode*******************/
+  .dark-mode {
+    transition: all 1s;
+    background-color: rgb(34, 33, 33);
+    color:white
 }
 .rainbow_text_animated {
   background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
@@ -219,3 +211,74 @@ li.dropdown {
       background-position: 100% 0;
   }
 }
+@media only screen and (min-width: 600px) {
+  .dropdown{
+      visibility:visible;
+      width:10rem;
+  }
+  .hamburger-menu{
+    display:none;
+  }
+  .ulnav{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      width: 17rem;
+      margin-right: 2rem;
+      list-style: none;
+  }
+  .ulnav li a{
+      list-style: none;
+      text-decoration: none;
+      color: white;
+  }
+  
+  .ulnav li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: fixed;
+      background-color: rgba(255,255,255,0.50);
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+  
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    .lidistrict{
+        visibility: hidden;
+    }
+  }
+  .wrapper { 
+    color : linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+      background-size: 400% 400%;
+      animation: gradient 2s ease infinite;
+  }
+  
+  @keyframes gradient {
+      0% {
+          background-position: 0% 50%;
+      }
+      50% {
+          background-position: 100% 50%;
+      }
+      100% {
+          background-position: 0% 50%;
+      }
+  }
