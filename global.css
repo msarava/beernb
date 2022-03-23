@@ -76,7 +76,6 @@ nav {
     flex-direction: row;
     height: 4rem;
     width: 100%;
-   
     justify-content: space-between;
     overflow: hidden;
     font-family: var(--roboto);
