@@ -62,8 +62,8 @@ li a{
 
 body{
     background-image: url(/assets/background_contact.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
 }
 #container{
     display: flex;
@@ -148,5 +148,10 @@ h1{
 @media only screen and (min-width: 600px) {
     #form-container{
         max-width: 480px;
+    }
+    
+    body{
+        background-image: url(/assets/background_contact_desktop.png);
+      
     }
 } 
