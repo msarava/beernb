@@ -27,9 +27,9 @@ if(window.innerWidth > 600) {
 
 const myCardUrl = {
     'card-saint-cyprien' : 'bar.html',
-    'card-carmes' : 'http://www.instagram.com',
-    'card-saint-pierre' : 'http://www.google.com',
-    'card-capitole' : 'http://www.linkedin.com',
+    'card-carmes' : 'https://www.facebook.com/lebistrologue',
+    'card-saint-pierre' : 'https://www.facebook.com/cacahuetebar',
+    'card-capitole' : 'https://www.facebook.com/vascolegamma/',
 }
 
 const myClassCards = document.querySelectorAll('.card')
