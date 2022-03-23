@@ -74,7 +74,7 @@ nav {
     transition: 0.4s;
 }
 .title:hover{
-    transform: scale(1.1);
+    transform: scale(1.4);
 }
 .para{
     font-family: var(--roboto);
@@ -88,7 +88,6 @@ nav {
     .dropdown{
         visibility:visible;
         width:10rem;
-      
     }
     .ulnav{
         display: flex;
