@@ -62,9 +62,8 @@ li a{
 
 body{
     background-image: url(/assets/background_contact.png);
-    /* background-repeat: no-repeat;
-    background-size: cover; */
 }
+
 #container{
     display: flex;
     flex-direction: column;
