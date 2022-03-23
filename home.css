@@ -1,11 +1,4 @@
 
-h2 {
-    font-family: var(--roboto);
-    color: var(--primary-color);
-    background-color: rgba(252, 252, 252, 0.8);
-    margin: 0;
-    padding: 0.5rem;
-}
 nav {
     display: flex;
     flex-direction: row;
@@ -165,18 +158,39 @@ body{
 }
 
 /* **********Lucas - cards ************* */
+.container{
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3rem;
+    padding: 1.5rem;
+}
 .card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.253);
+    border-radius: 1rem;
     
-    width: 100%;
     height: 15rem;
     background-size: cover;
     background-position: bottom 20% center;
 }
+.card-title {
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+}
 
+.container h2 {
+    font-family: var(--roboto);
+    color: var(--primary-color);
+    background-color: rgba(252, 252, 252, 0.8);
+    margin: 0;
+    padding: 0.5rem;
+    height: 2rem;
+}
+/* 
 .button-card:active {
     color: white;
     background-color: var(--secondary-color);
@@ -199,7 +213,7 @@ body{
     max-width: 4rem;
     text-decoration: none;
     color: var(--primary-color);
-}
+} */
 
 .card-carmes {
     background-image: url(assets/Les\ Carmes-Esquirol\ -\ 31555\ -\ 300180--.jpg);
