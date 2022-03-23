@@ -16,10 +16,11 @@
 <body>
 
     <nav>
-        <img class='logo' src="/assets/logobeer_white.png">
+       <a href="home.html" class="logolink">
+        <img class='logo' src="/assets/logobeer_white.png"> </a>
         <h1 class="titlenav">Beernb</h1>
-        <ul>
-            <li class="lidistrict"><a >Quartier</li>
+        <ul class="ulnav">
+            <li class="lidistrict"><a href="">Quartier</a></li>
             <li class="dropdown">
                 <a class="dropbtn">Quartier
                 <div class="dropdown-content">
@@ -31,17 +32,31 @@
             </li>
             <li><a >Contact</li>
         </ul>
-        <label class="switch">
-            <input id='btn-darkmode'type="checkbox" >
-            <span class="slider round"></span>
-        </label>
-
-
+     
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="home.html">Home</a></li>
+                      <li><a class="menu__item" href="#">Quartier</a></li>
+                      
+                      <li><a class="menu__item">Mode Sombre</a><label class="switch">
+                         <input id='btn-darkmode'type="checkbox" >
+                        <span class="slider round"></span>
+                    </label></li>
+                    <li><a class="menu__item">Mode Rainbow</a><label class="switch">
+                        <input id='btn-rainbowmode'type="checkbox" >
+                       <span class="slider round"></span>
+                   </label></li>
+                    </ul>
+            </div>
     </nav>
 
    
     <div class="hereos">
-        <h1 class="title"> Beernb
+         <h1 class="title"> Beernb
             <p class="para">Laissez-vous guider par votre soif</p>
         </h1>
         <img class="scroll" src="/assets/scroll.gif">
@@ -86,13 +101,13 @@
 
     </div>
 
-
-    <footer>
-
-        <div id="footer-menu">
-            <div id="logo-title">
-                <img id="main-logo" src="/assets/logobeer_white.png">
-                <h3>Beernb</h3>
+<!-- 111111111111111111111111 footer   richard 1111111111111111111111111-->
+<footer>
+    
+    <div class="container-chope">
+        <div class="chope">
+                <img src="assets/logobeer_white.png" alt="Chope de bière" class="imgchope">
+                <h3 class="logo-title">Beernb</h3>
             </div>
             <ul id="footer-list">
                 <li><a href="home.html">Accueil</li>
@@ -107,12 +122,30 @@
             <img id="logo-instagram" src="assets/icones/instagram.png" alt="logo instagram" />
         </div>
 
-        <div id="footer-CGU">
-            <h3>CGU</h3>
-            <p>WCS - 2022</p>
-        </div>
+        <ul class="vertical_menu">
+            <li>Acceuil</li>
+            <li>Quartiers</li>  
+            <li>Contact</li>
 
-    </footer>
+        </ul>
+        
+    </div>
+
+    
+    <div class="photos_container">
+        <img src="assets/twtitter.png" alt="logo de Twitter" class="imglogos">
+        <img src="assets/Facebook.png" alt="logo de Facebook" class="imglogos">
+        <img src="assets/Instagram_logo_2016.svg" alt="logo de Instagram" class="imglogos">
+        
+    </div>
+
+    <div class="right-topics">
+        <p class="CGU">CGU</p>
+        <p>WCS 2022</p>
+    </div>
+</footer>
+
+    
 </body>
 
 </html>
