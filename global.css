@@ -19,27 +19,13 @@ body{
     color:white
 }
 /* Bar de Navigation */
+
 nav {
     display: flex;
     flex-direction: row;
     height: 4rem;
     width: 100%;
-    background-color: var(--primary-color) ;
-    justify-content: space-between;
-    overflow: hidden;
-    font-family: var(--roboto);
-    position: fixed;
-    top:0;
-    left:0;
-    z-index: 10000;
-    
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    height: 4rem;
-    width: 100%;
-    background-color: var(--primary-color) ;
+   
     justify-content: space-between;
     overflow: hidden;
     font-family: var(--roboto);

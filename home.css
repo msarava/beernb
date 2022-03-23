@@ -7,22 +7,15 @@ h2 {
     padding: 0.5rem;
     
 }
+.logo{
+    height:4rem;
+}
 .card-title.dark{
     color:white;
     background-color:#121212be;
 }
 
-nav {
-    display: flex;
-    flex-direction: row;
-    height: 4rem;
-    width: 100%;
-    background-color: var(--primary-color) ;
-    justify-content: space-between;
-    overflow: hidden;
-    font-family: var(--roboto);
-    position: fixed;  
-}
+
 
 .titlenav{
     color: var(--secondary-color);
@@ -97,7 +90,9 @@ li a{
     letter-spacing: 2px;
 }
   @media only screen and (min-width: 600px) {
-
+nav{
+    
+}
     .dropdown{
         visibility:visible;
         width:10rem;
