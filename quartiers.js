@@ -5,8 +5,8 @@ if(window.innerWidth > 600) {
         card.addEventListener('mouseenter', function (event){
            
             card.style.height = '13rem';
-            // card.addEventListener('click',() => {
-            // })
+            card.addEventListener('click',() => {
+            })
         })    
         card.addEventListener('mouseleave', function (event){
              card.style.height = '2.5rem'
@@ -24,10 +24,10 @@ if(window.innerWidth > 600) {
 }
 
 const myCardUrl = {
-    'card-saint-cyprien' : 'bar.html',
-    'card-carmes' : 'https://www.facebook.com/lebistrologue',
-    'card-saint-pierre' : 'https://www.facebook.com/cacahuetebar',
-    'card-capitole' : 'https://www.facebook.com/vascolegamma/',
+    'card-smoking' : 'bar.html',
+    'card-bistrologue' : 'bar.html',
+    'card-cacahuete' : 'bar.html',
+    'card-gamma' : 'bar.html',
 }
 
 const myClassCards = document.querySelectorAll('.card')
