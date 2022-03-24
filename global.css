@@ -156,7 +156,16 @@ nav {
 }
 .a-quartier-visible{
   display:flex;
-  margin: 0.5rem;
+  display: flex;
+ 
+  color: #333;
+  font-family: var(--raleway);
+  color:var(--secondary-color);
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+  margin:0.8rem;
+  
 }
 .switch {
     position: relative;
@@ -228,6 +237,7 @@ footer{
     width: 100%;
     background-color: var(--primary-color);
     color: white;
+    font-family: var(--raleway);
 }
 
 .container-chope {
