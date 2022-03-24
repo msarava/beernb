@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="global.css">
     <script src="script.js" defer></script>
     <script src="quartiers.js" defer></script>
+    <script src="https://kit.fontawesome.com/d523e3791a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -24,10 +25,10 @@
             <li class="dropdown">
                 <a class="dropbtn">Quartier
                 <div class="dropdown-content">
-                    <a href="#">St Cyprien
-                    <a href="#">Carmes
-                    <a href="#">Capitole
-                    <a href="#">St Pierre
+                    <a href="#">St Cyprien</a>
+                    <a href="#">Carmes</a>
+                    <a href="#">Capitole</a>
+                    <a href="#">St Pierre</a>
                 </div>
             </li>
             <li><a class="liContact" >Contact</a></li>
@@ -40,7 +41,17 @@
             </label>
             <ul class="menu__box">
                 <li><a class="menu__item" href="home.html">Home</a></li>
-                <li><a class="menu__item" href="form.html">S'inscrire</a></li>
+                <li class="dropdown">
+                    <a class="menu__item" id="dropbtn">Quartier <i id='font' class="fas fa-hand-point-down"></i></a>
+                         </li>
+                     <li class="dropdown_quartier" >
+                         <a class="a-quartier">St Cyprien</a>
+                         <a class="a-quartier">Carmes</a>
+                         <a class="a-quartier">Capitole</a>
+                         <a class="a-quartier">St Pierre</a>
+
+                     </li>   
+
                       
                       <li><a class="menu__item">Mode Sombre</a><label class="switch">
                          <input id='btn-darkmode'type="checkbox" >

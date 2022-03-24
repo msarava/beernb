@@ -44,3 +44,23 @@ btnRainbow.addEventListener('click', function(){
     var element = document.body;
     element.classList.toggle("wrapper");
 })
+const quartiersBtn = document.querySelector("#dropbtn")
+const menuBox =document.querySelector('.menu__box');
+const quartierLi = document.querySelector('.dropdown_quartier')
+const quartierA = document.querySelectorAll('.a-quartier')
+const font = document.querySelector('#font')
+let click = 0;
+quartiersBtn.addEventListener('click', function(){
+    click++
+    quartierLi.classList.toggle('dropdown_quartier_visible');
+    var classes = font.classList;
+    if (click % 2 > 0){
+    classes.replace("fa-hand-point-down", "fa-hand-point-up");
+    }else {
+    classes.replace("fa-hand-point-up", "fa-hand-point-down");
+    }
+   for (let a of quartierA){
+    a.classList.toggle('a-quartier-visible')
+   }
+    
+})
