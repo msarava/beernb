@@ -6,8 +6,8 @@
 
 .hereos{
     background-image:url("assets/mobilebg.jpg") ;
-    backdrop-filter: blur(2px)
-    background-size: cover;
+    /* backdrop-filter: blur(-1px); */
+    background-size:cover;
     background-position: center;
     width: 100%;
     height:100vh;
@@ -31,6 +31,7 @@
     letter-spacing: 5px;
     padding:1.5rem;
     transition: 0.4s;
+
 }
 .title:hover{
     transform: scale(1.4);
