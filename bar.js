@@ -1,3 +1,20 @@
+const title = document.querySelector('.titlenav');
+const containerImage = document.querySelector('.card:hover');
+const nav = document.querySelector('nav')
+window.addEventListener('scroll', function(){
+    var scroll = this.scrollY; 
+    if (scroll > 400){
+    title.style.opacity = `${scroll - 400}%`;
+    nav.style.backgroundColor =`rgba(5 32 74 / ${scroll - 400}%)`;
+    }
+    else{
+        title.style.opacity = `0%`;
+        nav.style.backgroundColor =`rgba(5 32 74 / 0%)`;
+        
+    }
+})
+
+
 var lat = 43.597643165207685;
 var lon = 1.4290755653899188;
 var macarte = null;
@@ -16,7 +33,7 @@ function initMap() {
 }
 window.onload = function(){
 // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-initMap(); 
+initMap(); utt
 };
 
 // MAJ de la liste des commentaites avec "afficher plus"
@@ -100,9 +117,25 @@ commentCounter.innerHTML=`5 - ${counterNumber} Commentaires`;
 commentary.value = "";
 firstname.value = "";
 })
+const burgerBg = document.querySelector('.menu__box');
 btnDarkMode.addEventListener('click', function(){
     var element = document.body;
     element.classList.toggle("dark-mode");
     firstname.classList.toggle("dark");
     commentary.classList.toggle("dark");
+    burgerBg.classList.toggle('dark')
 });
+const btnRainbow = document.querySelector('#btn-rainbowmode');
+const cardsBtn = document.querySelectorAll('.button-card')
+
+btnRainbow.addEventListener('click', function(){
+    burgerBg.classList.toggle('wrapper');
+    var element = document.body;
+    element.classList.toggle("wrapper");
+    nav.classList.toggle('wrapper');
+    for (let title of cardsTitle) {
+        title.classList.toggle('wrapper');
+    }
+    
+   
+})

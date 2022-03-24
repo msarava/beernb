@@ -9,103 +9,115 @@
     <link rel="stylesheet" href="home.css" />
     <link rel="stylesheet" href="global.css" />
     <script src="script.js" defer></script>
-  </head>
+    <script src="home.js" defer></script>
+</head>
+
+<body>
 
   <body>
     <nav>
-      <a href="home.html" class="logolink">
-        <img class="logo" src="/assets/logobeer_white.png" />
-      </a>
-      <h1 class="titlenav">Beernb</h1>
-      <ul class="ulnav">
-        <li class="lidistrict"><a href="">Quartier</a></li>
-        <li class="dropdown">
-          <a class="dropbtn">Quartier</a>
-          <div class="dropdown-content">
-            <a href="#">St Cyprien</a>
-            <a href="#">Carmes</a>
-            <a href="#">Capitole</a>
-            <a href="#">St Pierre</a>
-          </div>
-        </li>
-        <li><a href="">Contact</a></li>
-      </ul>
-
-      <div class="hamburger-menu">
-        <input id="menu__toggle" type="checkbox" />
-        <label class="menu__btn" for="menu__toggle">
-          <span></span>
-        </label>
-        <ul class="menu__box">
-          <li><a class="menu__item" href="home.html">Home</a></li>
-          <li><a class="menu__item" href="#">Quartier</a></li>
-
-          <li>
-            <a class="menu__item">Mode Sombre</a
-            ><label class="switch">
-              <input id="btn-darkmode" type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-          </li>
-          <li>
-            <a class="menu__item">Mode Rainbow</a
-            ><label class="switch">
-              <input id="btn-rainbowmode" type="checkbox" />
-              <span class="slider round"></span>
-            </label>
-          </li>
+       <a href="home.html" class="logolink">
+        <img class='logo' src="/assets/logobeer_white.png"> </a>
+        <h1 class="titlenav">beernb</h1>
+        <ul class="ulnav">
+            <li class="lidistrict"><a href="">Quartier</a></li>
+            <li class="dropdown">
+                <a class="dropbtn">Quartier</a>
+                <div class="dropdown-content">
+                    <a href="quartiers.html">St Cyprien</a>
+                    <a href="quartiers.html">Carmes</a>
+                    <a href="quartiers.html">Capitole</a>
+                    <a href="quartiers.html">St Pierre</a>
+                </div>
+            </li>
+            <li><a href="form.html">S'inscrire</a></li>
         </ul>
-      </div>
+     
+        <div class="hamburger-menu">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#">Home</a></li>
+                      <li><a class="menu__item" href="quartiers.html">Quartier</a></li>
+                           
+                      <li><a class="menu__item">Mode Sombre</a><label class="switch">
+                         <input id='btn-darkmode'type="checkbox" >
+                        <span class="slider round"></span>
+                    </label></li>
+                    <li><a class="menu__item">Mode Rainbow</a><label class="switch">
+                        <input id='btn-rainbowmode'type="checkbox" >
+                       <span class="slider round"></span>
+                   </label></li>
+                    </ul>
+            </div>
     </nav>
 
     <div class="hereos">
-      <h1 class="title">
-        Beernb
-        <p class="para">Laissez-vous guider par votre soif</p>
-      </h1>
-      <img class="scroll" src="/assets/scroll.gif" />
+         <h1 class="title"> beernb
+            <p class="para">Laissez-vous guider par votre soif</p>
+        </h1>
+        <img class="scroll" src="/assets/scroll.gif">
     </div>
 
     <!-- ***************** LUCAS - CARDS ******************** -->
+    <div class="info">
+        <hr class="hr">
+        <h1>Bienvenue sur beernb</h1>
+        <hr class="hr">
+        <p> Trouvez les meilleurs bars à bières de Toulouse près de chez vous et suivez l'actualité de vos bars préférés (happy hour, meet up etc.) en vous inscrivant !</p>
+        <p> </p>
+        
 
+    </div>
     <div class="container">
-      <div class="card card-saint-cyprien">
-        <h2 class="card-title">Saint Cyprien</h2>
-        <a href="#" class="button-card">Découvrir</a>
-      </div>
 
-      <div class="card card-carmes">
-        <h2 class="card-title">Carmes</h2>
-        <a href="#" class="button-card">Découvrir</a>
-      </div>
+        <div class="card card-saint-cyprien" >
+            <h2 class="card-title">Saint Cyprien</h2>
+           
+            <p class="text-card"><img src="assets/white-arrow.png" alt="illustration Saint-Cyprien" >Situé sur la Rive Gauche de la Garonne, ce quartier toulousain a longtemps été délaissé. Aujourd’hui, le quartier Saint-Cyprien est une étape incontournable lorsque l’on veut découvrir Toulouse.</p>
+        </div>
 
-      <div class="card card-capitole">
-        <h2 class="card-title">Capitole</h2>
-        <a href="#" class="button-card">Découvrir</a>
-      </div>
+        <div class="card card-carmes">
+        
+     
+           <h2 class="card-title">Carmes</h2>
+           
+           <p class="text-card"><img src="assets/white-arrow.png" alt="illustration Carmes" >Le quartier des Carmes est un des quartiers centraux de Toulouse. Il se situe au cœur du centre historique, sur la rive droite de la Garonne. Il est d'ailleurs entièrement inclus dans le secteur sauvegardé.
+           </p>
+         </div>
 
-      <div class="card card-saint-pierre">
-        <h2 class="card-title">Saint-Pierre</h2>
-        <a href="#" class="button-card">Découvrir</a>
-      </div>
+        <div class="card card-capitole">
+        
+      
+           <h2 class="card-title">Capitole</h2>
+           
+           <p class="text-card"><img src="assets/white-arrow.png" alt="illustration Capitole" >Le quartier du Capitole constitue le cœur historique, emblème de la ville Rose. Traditionnel lieu de rassemblement des Toulousains lors d'événements majeurs, il s'agit d'une des principales zones touristiques et commerciales de Toulouse.</p>
+         </div>
+
+        <div class="card card-saint-pierre">
+        
+           <h2 class="card-title">Saint-Pierre</h2>
+          
+           <p class="text-card"><img src="assets/white-arrow.png" alt="illustration Saint-Pierre" >La place Saint-Pierre est une place située au cœur du centre-ville de Toulouse, en France. Les bars de la place sont réputés pour leurs "happy nights", soit l'application des tarifs "happy hour" mais pour toute la nuit.</p>
+        
+        </div>
+
+
+
     </div>
 
-    <!-- 111111111111111111111111 footer   richard 1111111111111111111111111-->
-    <footer>
-      <div class="container-chope">
+<!-- 111111111111111111111111 footer   richard 1111111111111111111111111-->
+<footer>
+    
+    <div class="container-chope">
         <div class="chope">
-          <img
-            src="assets/logobeer_white.png"
-            alt="Chope de bière"
-            class="imgchope"
-          />
-          <h3 class="logo-title">beernb</h3>
-        </div>
-      </div>
-
-      
-        <div class="ul">
-            <ul class="menu">
+                <img src="assets/logobeer_white.png" alt="Chope de bière" class="imgchope">
+                <h3 class="logo-title">Beernb</h3>
+            </div>
+  
+        <ul class="menu">
             <li>Acceuil</li>
             <li>Quartiers</button></li>
             <li>Contact</button></li>
