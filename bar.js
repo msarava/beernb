@@ -1,3 +1,56 @@
+const barList = [
+    
+    {
+        pictureBar: "/assets/19143272_1205279886242831_4465527839130197464_o.jpg",
+        nameBar: "The Smoking Barrel",
+        textBar:"Bar d’ambiance au cœur du quartier Saint Cyp, belle carte de cocktails, originales bières pression et vins du sud ouest tapas maison et de saisons .L’ambiance y est joviale et chaleureuse !",
+        openBar:"17:00 - 02:00",
+        adressBar :"5 Pl. Jean Diebold, 31300",
+        telBar:"05 31 22 32 95",
+        latBar : "43.597643165207685",
+        longBar: "1.4290755653899188",
+    },
+
+    {
+        pictureBar: "assets/bistrologue.jpg",
+        nameBar: "Le Bistrologue",
+        textBar:"Le Bistrologue est un bar à tapas festif où vous pourrez déguster des mini plats accompagnés de délicieuses bières belges.",
+        openBar:"16:00 - 02:00",
+        adressBar :"8 Pl. du Pont Neuf, 31000",
+        telBar:"05 61 52 66 80",
+        latBar : "43,5995030",
+        longBar: "1,1,4332711",
+    },
+
+    {
+        pictureBar: "/assets/vasco-le-gamme.png",
+        nameBar: "Vasco Le Gamma",
+        textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
+        openBar:"17:00 - 02:00",
+        adressBar :"2 Pl. du Ravelin, 31300",
+        telBar:"05 61 52 66 80",
+        latBar : "43,5987501",
+        longBar: "1,4406775",
+    },
+
+    {
+        pictureBar: "assets/cachuete-lmq.jpg",
+        nameBar: "La Cacahuète",
+        textBar:"Cacahuète. Quelque chose de simple et qui reprend cette tradition des bars aux noms un peu particuliers, sans pour autant tomber dans l’alambiqué ! Et il faut dire que pour évoquer l’apéro, difficile de penser à quelque chose de plus approprié.",
+        openBar:"08:00 - 02:00",
+        adressBar :"21 rue Réclusane, 31300",
+        telBar:"09 85 00 96 15",
+        latBar : "43,5987140",
+        longBar: "1,4328430",
+        ",
+    }
+]
+
+
+
+
+
+
 const title = document.querySelector('.titlenav');
 const containerImage = document.querySelector('.card:hover');
 const nav = document.querySelector('nav')
@@ -139,3 +192,38 @@ btnRainbow.addEventListener('click', function(){
     
    
 })
+
+
+
+
+
+// const queryParams=window.location.search.split("?")[1].split("&").map(element =>element.split("=")).reduce((memo, value)=>{memo[value[0]] = value[1]; return memo},{});
+
+const queryParamsArrayOfKeysAndValues=window.location.search.split("?")[1].split("&").map(element =>element.split("="));
+
+const queryParams={};
+
+
+// queryParamsArrayOfKeysAndValues.forEach(([key, value])=>{
+
+//     queryParams[key]=value;
+
+// })
+
+
+
+queryParamsArrayOfKeysAndValues.forEach((value)=>{
+
+    queryParams[value[0]]=value[1]
+
+})
+
+
+const barIndex=queryParams.barIndex;
+const barData=barList[barIndex];
+
+
+
+const barNameElement= document.querySelector("#barName");
+
+barNameElement.innerText=barData.nameBar;
