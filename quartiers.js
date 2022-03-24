@@ -37,6 +37,8 @@ for(let myClassCard of myClassCards){
         window.open(url, "_self")
         })
 } 
+
+/* Mene DropDown du menu burger */
 const quartiersBtn = document.querySelector("#dropbtn")
 const menuBox =document.querySelector('.menu__box');
 const quartierLi = document.querySelector('.dropdown_quartier')
