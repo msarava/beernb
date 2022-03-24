@@ -5,7 +5,7 @@
 }
 
 .hereos{
-    background-image:url("assets/maeva-vigier-mZkpzMI0RFQ-unsplash.jpg") ;
+    background-image:url("assets/maeva-vigier-x-eUweAmwdI-unsplash (1).jpg") ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -40,6 +40,26 @@
     font-weight: 40px;
     color:white;
     letter-spacing: 2px;
+}
+.hr {
+    border : var(--secondary-color) 1px solid;
+    width:70%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: var(--raleway); 
+    font-size: 1.2rem;
+}
+.info h1 {
+    color:var(--secondary-color);
+    margin: 1rem;
+}
+.info p {
+    text-align: center;
+    margin: 0 1rem;
+    margin-top: 1rem;
 }
 @media only screen and (min-width: 600px) {
     .hereos{
