@@ -44,3 +44,11 @@ btnRainbow.addEventListener('click', function(){
     var element = document.body;
     element.classList.toggle("wrapper");
 })
+const quartiersBtn = document.querySelector(".dropbtn menu__item")
+const menuBox =document.querySelector('menu__box');
+quartiersBtn.addEventListener('click', function(){
+    const quartierLi = document.createElement("li")
+    quartierLi.classList.toggle("dropdown_quartier")
+    menuBox.appendChild(quartierLi)
+    
+})
