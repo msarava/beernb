@@ -26,7 +26,7 @@ if(window.innerWidth > 600) {
 }
 
 const myCardUrl = {
-    'card-saint-cyprien' : 'bar.html',
+    'card-saint-cyprien' : 'quartiers.html',
     'card-carmes' : 'http://www.instagram.com',
     'card-saint-pierre' : 'http://www.google.com',
     'card-capitole' : 'http://www.linkedin.com',

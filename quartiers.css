@@ -96,10 +96,10 @@ body{
 
 .container h2 {
     font-family: var(--roboto);
-    color: var(--primary-color);
-    background-color: rgba(252, 252, 252, 0.8);
+    color: var(--third-color);
+    background-color: #05204aab;
     margin: 0;
-    padding: 0.5rem;
+    padding: 1.5rem;
     
 }
 
@@ -139,7 +139,8 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background-color: rgba(255, 255, 255, 0.596);
+    background-color: #05204aab;
+    color: var(--third-color);
     margin: 0;
     padding: 0 2rem;
     text-align: center;
