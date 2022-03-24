@@ -119,19 +119,19 @@ body{
     border-radius: 1rem 1rem 0 0;
 }
 
-.card-smoking {
+.card-bistrologue {
     background-image: url(assets/bistrologue.jpg);
 }
 
-.card-bistrologue { 
+.card-gamma { 
     background-image: url(assets/vasco-le-gamme.png); 
 }
 
-.card-gamma {    
+.card-cacahuete {    
     background-image: url(assets/cachuete-lmq.jpg);
 }
 
-.card-cacahuete {
+.card-smoking {
     background-image: url(assets/19143272_1205279886242831_4465527839130197464_o.jpg);
 }
 
