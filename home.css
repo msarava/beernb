@@ -58,7 +58,7 @@
     font-size: 2rem;
 }
 .info p {
-    text-align: center;
+    text-align: justify;
     margin: 0 2rem;
     margin-top: 1rem;
 }
@@ -75,7 +75,11 @@
         height:15rem;
         width: 12rem;
     }
+    .info p {
+        text-align: center;
+        margin: 0 4rem;
     }
+}
 body{
     padding: 0; 
     margin: 0;
@@ -112,7 +116,7 @@ body{
     background-size: cover;
     background-position: bottom 20% center;
     box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.253);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 
 .card-title {
@@ -125,7 +129,7 @@ body{
 }
 
 .card-capitole { 
-    background-image: url(assets/card_capitole.jpg); 
+    background-image: url(assets/capitole_big.jpg); 
 }
 
 .card-saint-pierre {    
@@ -199,6 +203,7 @@ body{
 
 footer {
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     left: 0;
     bottom: 0;
@@ -215,6 +220,7 @@ footer {
 
 .chope {
 display : flex;
+justify-content: center;
 }
 
 .imgchope {
@@ -226,50 +232,43 @@ display : flex;
 .logo-title {
     color: #CE6A85;
     margin-left: -10px;
-
 }
 
-.vertical_menu {
+.menu {
     display: flex;
-    flex-direction: column;
-    padding-left: 0px;
-    align-items:flex-start;
-    margin: 0px 0px 60px 50px;
+    justify-content: space-around;
+    padding : 0 1rem 0rem 1rem;
     list-style: none;
-    
+}
 
+.footer-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 .photos_container {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    min-width: 40%;
-    padding: 30px 0px 30px 0px;
-    margin: 0px 10px;
+    justify-content: center;
     gap: 10px;
 }
 
 .imglogos{
-    width: 3rem;
-    height : 3rem;
+    width: 2rem;
+    height : 2rem;
     border-radius: 0.5rem;
+    min-width: 33%;
 }
 
 
-.right-topics {
-    display: flex;
-    flex-direction: column;
+.bottom-topics {
+    display:flex;
     justify-content: center;
-    min-width: 20%;
-    align-items: center;
-    margin-right: 15px;
-   
-    }
+    font-size: 0.7rem;
+}
 
-    .CGU {
-        margin: 16px 0px 0px 0px;
-    }
+    
 
     .dropdown{
             
@@ -383,25 +382,60 @@ display : flex;
 
 
 /***************************media pour le footer *****************************/
+        
+        
+        footer {
+            display: flex;
+
+            justify-content: space-around;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #05204A;
+            color: white;
+}
+
         .imgchope {
             width: 6rem;
             height : 6rem;
             border-radius: 0.5rem;
+            margin : 10px 0 0 0;
         }
  
-
+        .footer-bottom {
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin: 3rem;
+                    }
         .imglogos{
             width: 4rem;
             height : 4rem;
             border-radius: 0.5rem;
-        }
+                    }
 
         .logo-title {
+            font-size: 2rem;
             margin :35px 0px 18.720px 0px;
         }
 
-        .vertical_menu {
-            margin: 0px 0px 90px 98px;
+        .menu {
+            display: flex;
+            justify-content: space-evenly;
+            font-size: 2rem;
         }
+
+        .photos_container {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 50px;
+        }
+
+        .bottom-topics {
+            font-size: 1rem;
+        }
+
             
     }
+
+        
