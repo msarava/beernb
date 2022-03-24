@@ -5,7 +5,7 @@
 }
 
 .hereos{
-    background-image:url("assets/maeva-vigier-mZkpzMI0RFQ-unsplash.jpg") ;
+    background-image:url("assets/maeva-vigier-x-eUweAmwdI-unsplash (1).jpg") ;
     background-size: cover;
     background-position: center;
     width: 100%;
@@ -40,6 +40,26 @@
     font-weight: 40px;
     color:white;
     letter-spacing: 2px;
+}
+.hr {
+    border : var(--secondary-color) 1px solid;
+    width:70%;
+}
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-family: var(--raleway); 
+    font-size: 1.2rem;
+}
+.info h1 {
+    color:var(--secondary-color);
+    margin: 1rem;
+}
+.info p {
+    text-align: center;
+    margin: 0 1rem;
+    margin-top: 1rem;
 }
 @media only screen and (min-width: 600px) {
     .hereos{
@@ -91,7 +111,7 @@ body{
     background-size: cover;
     background-position: bottom 20% center;
     box-shadow: 0 0 10px 8px rgba(0, 0, 0, 0.253);
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 
 .card-title {
@@ -99,19 +119,19 @@ body{
     border-radius: 1rem 1rem 0 0;
 }
 
-.card-carmes {
+.card-bistrologue {
     background-image: url(assets/bistrologue.jpg);
 }
 
-.card-capitole { 
+.card-gamma { 
     background-image: url(assets/vasco-le-gamme.png); 
 }
 
-.card-saint-pierre {    
+.card-cacahuete{    
     background-image: url('https://www.le-meilleur-quartier.fr/wp-content/uploads/cachuete-lmq.jpg');
 }
 
-.card-saint-cyprien {
+.card-smoking {
     background-image: url(assets/19143272_1205279886242831_4465527839130197464_o.jpg);
 }
 
@@ -254,55 +274,7 @@ display : flex;
 
     @media only screen and (min-width: 600px) {
 
-        .dropdown{
-            visibility:visible;
-            width:10rem;
-          
-        }
-        .ulnav{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
-            width: 17rem;
-            margin-right: 2rem;
-            list-style: none;
-        }
-        .ulnav li a{
-            list-style: none;
-            text-decoration: none;
-            color: white;
-        }
-        
-        .ulnav li.dropdown {
-            display: inline-block;
-          }
-          
-          .dropdown-content {
-            display: none;
-            position: fixed;
-            background-color: rgba(255,255,255,0.50);
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-            z-index: 1;
-          }
-    
-          .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-            text-align: left;
-          }
-          
-          .dropdown-content a:hover {background-color: #f1f1f1;}
-          
-          .dropdown:hover .dropdown-content {
-            display: block;
-          }
-          .lidistrict{
-              visibility: hidden;
-          }
+      
         .hereos{
             background-image:url("/assets/thomas-despeyroux-FOr1dBCQs4U-unsplash.jpg") ;
             background-size: cover;
