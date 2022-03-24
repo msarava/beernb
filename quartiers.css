@@ -119,19 +119,19 @@ body{
     border-radius: 1rem 1rem 0 0;
 }
 
-.card-carmes {
+.card-smoking {
     background-image: url(assets/bistrologue.jpg);
 }
 
-.card-capitole { 
+.card-bistrologue { 
     background-image: url(assets/vasco-le-gamme.png); 
 }
 
-.card-saint-pierre {    
-    background-image: url('https://www.le-meilleur-quartier.fr/wp-content/uploads/cachuete-lmq.jpg');
+.card-gamma {    
+    background-image: url(assets/cachuete-lmq.jpg);
 }
 
-.card-saint-cyprien {
+.card-cacahuete {
     background-image: url(assets/19143272_1205279886242831_4465527839130197464_o.jpg);
 }
 
@@ -143,7 +143,7 @@ body{
     color: var(--third-color);
     margin: 0;
     padding: 0 2rem;
-    text-align: center;
+    text-align: justify;
     align-items: center;
     height: 2.5rem;
     overflow: hidden;
