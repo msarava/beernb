@@ -45,12 +45,12 @@ let hidden=true;
 btnShow.addEventListener("click", function(){
 if(hidden===true){
 hiddenComment.classList.toggle("hidden-comment");
-btnShow.innerHTML="afficher moins";
+btnShow.innerHTML="Afficher moins";
 hidden=false;  
 }
 else{
 hiddenComment.classList.toggle("hidden-comment");
-btnShow.innerHTML="afficher plus";
+btnShow.innerHTML="Afficher plus";
 hidden=true;  
 }
 
