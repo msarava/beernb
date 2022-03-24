@@ -5,7 +5,8 @@
 }
 
 .hereos{
-    background-image:url("assets/maeva-vigier-mZkpzMI0RFQ-unsplash.jpg") ;
+    background-image:url("assets/mobilebg.jpg") ;
+    backdrop-filter: blur(2px)
     background-size: cover;
     background-position: center;
     width: 100%;
