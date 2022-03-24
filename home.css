@@ -122,8 +122,8 @@ body{
     color: var(--third-color);
     background-color: #05204aab;
     margin: 0;
-    padding: 0;
-    text-align: center;
+    padding: 0 1.5rem;
+    text-align:justify;
     font-family: var(--raleway);
     font-size: 1.2rem;
     font-weight: bold;
