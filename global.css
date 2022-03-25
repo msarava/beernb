@@ -394,12 +394,7 @@ justify-content: center;
       color: white;
 }
 
-  .imgchope {
-      width: 6rem;
-      height : 6rem;
-      border-radius: 0.5rem;
-      margin : 10px 0 0 0;
-  }
+
 
   .footer-bottom {
       display:flex;
