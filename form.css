@@ -20,9 +20,7 @@ h1{
     padding: 1rem;
     width: 90%;
 }
-footer{
-    margin-top: 12rem;
-}
+
 #title p{
   text-align: center;
 }
@@ -91,5 +89,9 @@ footer{
     body{
         background-image: url(/assets/background_contact_desktop.png);
       
+    }
+    #form-section{
+       
+        margin-top: 5rem;
     }
 } 
