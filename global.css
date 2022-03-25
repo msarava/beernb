@@ -267,6 +267,7 @@ justify-content: center;
     justify-content: space-around;
     padding : 0 1rem 0rem 1rem;
     list-style: none;
+    text-decoration: none;
 }
 
 .footer-bottom {
@@ -281,7 +282,10 @@ justify-content: center;
     justify-content: center;
     gap: 10px;
 }
-
+.lifooter a {
+  text-decoration: none;
+  color: white
+}
 .imglogos{
     width: 2rem;
     height : 2rem;
