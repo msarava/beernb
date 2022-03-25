@@ -40,17 +40,3 @@ for(let myClassCard of myClassCards){
 
 /* Mene DropDown du menu burger */
 
-quartiersBtn.addEventListener('click', function(){
-    click++
-    quartierLi.classList.toggle('dropdown_quartier_visible');
-    var classes = font.classList;
-    if (click % 2 > 0){
-    classes.replace("fa-hand-point-down", "fa-hand-point-up");
-    }else {
-    classes.replace("fa-hand-point-up", "fa-hand-point-down");
-    }
-   for (let a of quartierA){
-    a.classList.toggle('a-quartier-visible')
-   }
-    
-})
