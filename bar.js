@@ -221,11 +221,12 @@ const barData=barList[barIndex];
 const barNameElement= document.querySelector("#barName");
 barNameElement.innerText=barData.nameBar;
 
-// MAJ Texte du bar
-const barNameElement= document.querySelector("#barText");
-barNameElement.innerText=barData.textBar;
+// // MAJ Texte du bar
+const barTextElement= document.querySelector("#barText");
+barTextElement.innerText=barData.textBar;
 
-
+// // MAJ Image du bar
+const barPicDivElement= document.querySelector(".card");
 
 
 
