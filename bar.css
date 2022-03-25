@@ -134,6 +134,7 @@
     margin:0;
 }
 .btn-standard{
+    cursor: pointer;
     font-family: var(--roboto);
     background-color: var(--secondary-color);
     color: white;
@@ -251,6 +252,7 @@
 }
 
 .btn-show-more{
+    cursor: pointer;
     font-family: var(--roboto);
     color: var(--secondary-color);
     padding: 0.1rem 0.5rem ; 
