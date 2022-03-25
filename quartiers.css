@@ -206,7 +206,7 @@ body{
 
       
         .hereos{
-            background-image:url("/assets/thomas-despeyroux-FOr1dBCQs4U-unsplash.jpg") ;
+            background-image:url("./assets/thomas-despeyroux-FOr1dBCQs4U-unsplash.jpg") ;
             background-size: cover;
             background-position: center;
             width: 100%;
