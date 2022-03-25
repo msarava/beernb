@@ -71,7 +71,6 @@ footer{
     width: 90%;
 }
 .btn-standard{
-    cursor: pointer;
     font-family: var(--roboto);
     background-color: var(--secondary-color);
     color: white;
