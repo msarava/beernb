@@ -6,7 +6,6 @@ if(window.innerWidth > 600) {
            
             card.style.height = '13rem';
             card.addEventListener('click',() => {
-            console.log('test')
             })
         })    
         card.addEventListener('mouseleave', function (event){
@@ -27,9 +26,9 @@ if(window.innerWidth > 600) {
 
 const myCardUrl = {
     'card-saint-cyprien' : 'quartiers.html',
-    'card-carmes' : 'http://www.instagram.com',
-    'card-saint-pierre' : 'http://www.google.com',
-    'card-capitole' : 'http://www.linkedin.com',
+    'card-carmes' : 'quartiers.html',
+    'card-saint-pierre' : 'quartiers.html',
+    'card-capitole' : 'quartiers.html',
 }
 
 const myClassCards = document.querySelectorAll('.card')
