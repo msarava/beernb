@@ -6,7 +6,6 @@ if(window.innerWidth > 600) {
            
             card.style.height = '13rem';
             card.addEventListener('click',() => {
-            console.log('test')
             })
         })    
         card.addEventListener('mouseleave', function (event){
