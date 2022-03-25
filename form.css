@@ -21,7 +21,7 @@ h1{
     width: 90%;
 }
 footer{
-    margin-top: 5rem;
+    margin-top: 12rem;
 }
 #title p{
   text-align: center;
@@ -71,7 +71,6 @@ footer{
     width: 90%;
 }
 .btn-standard{
-    cursor: pointer;
     font-family: var(--roboto);
     background-color: var(--secondary-color);
     color: white;
