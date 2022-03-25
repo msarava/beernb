@@ -466,7 +466,10 @@ font-family: var(--raleway);
     .title-event h1{
         margin:0.6rem;
     }
+    #comment-counter{
+width: 60%;
 
+    }
     .comment-box{
         width: 50%;
     }
@@ -485,4 +488,5 @@ font-family: var(--raleway);
 #btn-container{
     justify-content: center;
 }
+
 }
