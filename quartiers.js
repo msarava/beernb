@@ -12,7 +12,7 @@ if(window.innerWidth > 600) {
              card.style.height = '2.5rem'
         })
     
-    
+        
     }
 }
     else {
@@ -37,12 +37,9 @@ for(let myClassCard of myClassCards){
         window.open(url, "_self")
         })
 } 
-const quartiersBtn = document.querySelector("#dropbtn")
-const menuBox =document.querySelector('.menu__box');
-const quartierLi = document.querySelector('.dropdown_quartier')
-const quartierA = document.querySelectorAll('.a-quartier')
-const font = document.querySelector('#font')
-let click = 0;
+
+/* Mene DropDown du menu burger */
+
 quartiersBtn.addEventListener('click', function(){
     click++
     quartierLi.classList.toggle('dropdown_quartier_visible');

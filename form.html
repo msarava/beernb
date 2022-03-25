@@ -15,7 +15,8 @@
 
 <body>
   <nav style="background: var(--primary-color)">
-    <img class='logo' src="/assets/logobeer_white.png">
+    <a href="home.html" class="logolink">
+      <img class='logo' src="/assets/logobeer_white.png"> </a>
     <h1 class="titlenav">Beernb</h1>
     <ul class="ulnav">
       <li class="lidistrict"><a href="">Quartier</a></li>
@@ -28,7 +29,7 @@
           <a href="quartiers.html">St Pierre</a>
         </div>
       </li>
-      <li><a href="">Contact</a></li>
+      <li><a href="form.html">S'inscrire</a></li>
     </ul>
     <div class="hamburger-menu">
       <input id="menu__toggle" type="checkbox" />
@@ -39,14 +40,14 @@
         <li><a class="menu__item" href="home.html">Home</a></li>
         <li class="dropdown">
           <a class="menu__item" id="dropbtn">Quartier <i id='font' class="fas fa-hand-point-down"></i></a>
-               </li>
-           <li class="dropdown_quartier" >
-               <a href='quartiers.html'class="a-quartier">St Cyprien</a>
-               <a href='quartiers.html'class="a-quartier">Carmes</a>
-               <a href='quartiers.html'class="a-quartier">Capitole</a>
-               <a href='quartiers.html'class="a-quartier">St Pierre</a>
-           </li>   
-
+        </li>
+        <li class="dropdown_quartier">
+          <a href='quartiers.html' class="a-quartier">St Cyprien</a>
+          <a href='quartiers.html' class="a-quartier">Carmes</a>
+          <a href='quartiers.html' class="a-quartier">Capitole</a>
+          <a href='quartiers.html' class="a-quartier">St Pierre</a>
+        </li>
+        <li><a class="menu__item" href="form.html">S'inscrire</a></li>
         <li><a class="menu__item">Mode Sombre</a><label class="switch">
             <input id='btn-darkmode' type="checkbox">
             <span class="slider round"></span>
@@ -131,4 +132,5 @@
 
   </footer>
 </body>
+
 </html>
