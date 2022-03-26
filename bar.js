@@ -117,6 +117,7 @@ commentCounter.innerHTML=`5 - ${counterNumber} Commentaires`;
 commentary.value = "";
 firstname.value = "";
 })
+
 const burgerBg = document.querySelector('.menu__box');
 btnDarkMode.addEventListener('click', function(){
     var element = document.body;

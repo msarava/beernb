@@ -49,3 +49,14 @@ quartiersBtn.addEventListener('click', function(){
    }
     
 })
+
+const sendBtn = document.querySelector("#btn-standard");
+
+sendBtn.addEventListener('click', function(){
+    alert("Votre demande d'inscritpion est bien enregistrée !")
+});
+
+// Nettoyage du formulaire apres publication
+commentary.value = "";
+firstname.value = "";
+})
