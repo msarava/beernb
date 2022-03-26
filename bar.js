@@ -85,7 +85,7 @@ function initMap() {
 }
 window.onload = function(){
 // Fonction d'initialisation qui s'exécute lorsque le DOM est chargé
-initMap();
+initMap(); 
 };
 
 // MAJ de la liste des commentaites avec "afficher plus"
@@ -255,5 +255,128 @@ const barPicDivElement= document.querySelector(".card");
 //    for (let a of quartierA){
 //     a.classList.toggle('a-quartier-visible')
 //    }
+// Etoiles du commentaire
+
+const star1=document.querySelector("#star1");
+const star2=document.querySelector("#star2");
+const star3=document.querySelector("#star3");
+const star4=document.querySelector("#star4");
+const star5=document.querySelector("#star5");
+
+let activeStar1=false;
+let activeStar2=false;
+let activeStar3=false;
+let activeStar4=false;
+let activeStar5=false;
+
+star1.addEventListener(`click`,function(){
+
+    if (!activeStar1){
+        star1.src= "assets/star.png";
+        star1.alt= "full star";
+        activeStar1=true;
+    }
+    else{       
+            star1.src= "assets/star-border.png";
+            star1.alt= "border star";
+            activeStar1=false;
+        }
+    }
+);
+star2.addEventListener(`click`,function(){
+
+    if (!activeStar2){
+        star1.src= "assets/star.png";
+        star1.alt= "full star";
+        star2.src= "assets/star.png";
+        star2.alt= "full star";
+        activeStar2=true;
+    }
+    else{       
+            star2.src= "assets/star-border.png";
+            star2.alt= "border star";
+            activeStar2=false;
+        }
+    }
+);
+
+star3.addEventListener(`click`,function(){
+
+    if (!activeStar3){
+        star1.src= "assets/star.png";
+        star1.alt= "full star";
+        star2.src= "assets/star.png";
+        star2.alt= "full star";
+        star3.src= "assets/star.png";
+        star3.alt= "full star";
+        activeStar3=true;
+    }
+    else{       
+            star3.src= "assets/star-border.png";
+            star3.alt= "border star";
+            activeStar3=false;
+        }
+    }
+);
+star4.addEventListener(`click`,function(){
+    if (!activeStar4){
+        star1.src= "assets/star.png";
+        star1.alt= "full star";
+        star2.src= "assets/star.png";
+        star2.alt= "full star";
+        star3.src= "assets/star.png";
+        star3.alt= "full star";
+        star4.src= "assets/star.png";
+        star4.alt= "full star";
+        activeStar4=true;
+    }
+    else{       
+            star4.src= "assets/star-border.png";
+            star4.alt= "border star";
+            activeStar4=false;
+        }
+    }
+);
+star5.addEventListener(`click`,function(){
+    if (!activeStar5){
+        star1.src= "assets/star.png";
+        star1.alt= "full star";
+        star2.src= "assets/star.png";
+        star2.alt= "full star";
+        star3.src= "assets/star.png";
+        star3.alt= "full star";
+        star4.src= "assets/star.png";
+        star4.alt= "full star";
+        star5.src= "assets/star.png";
+        star5.alt= "full star";
+        activeStar5=true;
+    }
+    else{       
+        star5.src= "assets/star-border.png";
+            star5.alt= "border star";
+            activeStar5=false;
+        }
+    }
+);
+
+// *************************************Menu*************************************
+const quartiersBtn = document.querySelector("#dropbtn")
+const menuBox =document.querySelector('.menu__box');
+const quartierLi = document.querySelector('.dropdown_quartier')
+const quartierA = document.querySelectorAll('.a-quartier')
+const font = document.querySelector('#font')
+let click = 0;
+quartiersBtn.addEventListener('click', function(){
+    click++
+    quartierLi.classList.toggle('dropdown_quartier_visible');
+    var classes = font.classList;
+    if (click % 2 > 0){
+    classes.replace("fa-hand-point-down", "fa-hand-point-up");
+    }else {
+    classes.replace("fa-hand-point-up", "fa-hand-point-down");
+    }
+   for (let a of quartierA){
+    a.classList.toggle('a-quartier-visible')
+   }
     
-// })
+})

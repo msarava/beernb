@@ -229,6 +229,7 @@ input:checked + .slider:before {
   }
   
 footer{
+  
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -238,6 +239,8 @@ footer{
     background-color: var(--primary-color);
     color: white;
     font-family: var(--raleway);
+    margin-top: 9rem;
+  }
 }
 
 .container-chope {
@@ -267,6 +270,7 @@ justify-content: center;
     justify-content: space-around;
     padding : 0 1rem 0rem 1rem;
     list-style: none;
+    text-decoration: none;
 }
 
 .footer-bottom {
@@ -281,7 +285,10 @@ justify-content: center;
     justify-content: center;
     gap: 10px;
 }
-
+.lifooter a {
+  text-decoration: none;
+  color: white
+}
 .imglogos{
     width: 2rem;
     height : 2rem;
@@ -381,7 +388,7 @@ justify-content: center;
     }
     footer {
       display: flex;
-
+      margin-top: 11.05rem;
       justify-content: space-around;
       left: 0;
       bottom: 0;
@@ -390,22 +397,16 @@ justify-content: center;
       color: white;
 }
 
-  .imgchope {
-      width: 6rem;
-      height : 6rem;
-      border-radius: 0.5rem;
-      margin : 10px 0 0 0;
-  }
+
 
   .footer-bottom {
       display:flex;
       justify-content: center;
       align-items: center;
-      margin: 3rem;
               }
   .imglogos{
-      width: 4rem;
-      height : 4rem;
+      width: 2rem;
+      height : 2rem;
       border-radius: 0.5rem;
               }
 
@@ -417,7 +418,7 @@ justify-content: center;
   .menu {
       display: flex;
       justify-content: space-evenly;
-      font-size: 2rem;
+      font-size: 1.5rem;
   }
 
   .photos_container {
