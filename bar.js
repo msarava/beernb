@@ -22,27 +22,27 @@ const barList = [
         longBar: "1,1,4332711",
     }
 
-    // ,{
-    //     pictureBar: "/assets/vasco-le-gamme.png",
-    //     nameBar: "Vasco Le Gamma",
-    //     textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
-    //     openBar:"17:00 - 02:00",
-    //     adressBar :"2 Pl. du Ravelin, 31300",
-    //     telBar:"05 61 52 66 80",
-    //     latBar : "43,5987501",
-    //     longBar: "1,4406775",
-    // },
+    ,{
+        pictureBar: "/assets/vasco-le-gamme.png",
+        nameBar: "Vasco Le Gamma",
+        textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
+        openBar:"17:00 - 02:00",
+        adressBar :"2 Pl. du Ravelin, 31300",
+        telBar:"05 61 52 66 80",
+        latBar : "43,5987501",
+        longBar: "1,4406775",
+    },
 
-    // {
-    //     pictureBar: "assets/cachuete-lmq.jpg",
-    //     nameBar: "La Cacahuète",
-    //     textBar:"Cacahuète. Quelque chose de simple et qui reprend cette tradition des bars aux noms un peu particuliers, sans pour autant tomber dans l’alambiqué ! Et il faut dire que pour évoquer l’apéro, difficile de penser à quelque chose de plus approprié.",
-    //     openBar:"08:00 - 02:00",
-    //     adressBar :"21 rue Réclusane, 31300",
-    //     telBar:"09 85 00 96 15",
-    //     latBar : "43,5987140",
-    //     longBar: "1,4328430",
-    // }
+    {
+        pictureBar: "assets/cachuete-lmq.jpg",
+        nameBar: "La Cacahuète",
+        textBar:"Cacahuète. Quelque chose de simple et qui reprend cette tradition des bars aux noms un peu particuliers, sans pour autant tomber dans l’alambiqué ! Et il faut dire que pour évoquer l’apéro, difficile de penser à quelque chose de plus approprié.",
+        openBar:"08:00 - 02:00",
+        adressBar :"21 rue Réclusane, 31300",
+        telBar:"09 85 00 96 15",
+        latBar : "43,5987140",
+        longBar: "1,4328430",
+    }
 ]
 
 
