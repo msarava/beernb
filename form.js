@@ -1,4 +1,11 @@
 
+
+
+/************* Menu************/
+
+
+//Dark Mode
+
 const btnDarkMode = document.querySelector('#btn-darkmode')
 const cardsTitle = document.querySelectorAll('.card-title')
 const cardsBtn = document.querySelectorAll('.button-card')
@@ -16,6 +23,8 @@ btnDarkMode.addEventListener('click', function(){
    
 });
 
+//Rainbow mode
+
 const btnRainbow = document.querySelector('#btn-rainbowmode');
 btnRainbow.addEventListener('click', function(){
     burgerBg.classList.toggle('wrapper');
@@ -29,6 +38,8 @@ btnRainbow.addEventListener('click', function(){
     var element = document.body;
     element.classList.toggle("wrapper");
 })
+
+//drop menu
 const quartiersBtn = document.querySelector("#dropbtn")
 const menuBox =document.querySelector('.menu__box');
 const quartierLi = document.querySelector('.dropdown_quartier')
@@ -49,3 +60,27 @@ quartiersBtn.addEventListener('click', function(){
    }
     
 })
+
+// Alerte formulaire
+
+const lastNameIn = document.querySelector("#lastNameIn");
+const firstNameIn = document.querySelector("#firstNameIn");
+const mailIn = document.querySelector("#mailIn");
+const btnSend = document.querySelector("#btn-standard");
+
+btnSend.addEventListener('click',function(){
+
+alert(`Merci ${firstNameIn.value} ${lastNameIn.value} !\nVotre adresse est bien enregistrée`);
+
+// Nettoyage du formulaire apres validation
+
+ lastNameIn.value = "";
+ firstNameIn.value = "";
+ mailIn.value = "";
+});
+
+
+
+
+
+
