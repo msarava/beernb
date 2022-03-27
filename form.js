@@ -70,14 +70,21 @@ const btnSend = document.querySelector("#btn-standard");
 
 btnSend.addEventListener('click',function(){
 
-alert(`Merci ${firstNameIn.value} ${lastNameIn.value} !\nVotre adresse est bien enregistrée`);
+if (lastNameIn.value && firstNameIn.value && mailIn.value){
 
-// Nettoyage du formulaire apres validation
+    alert(`Merci ${firstNameIn.value} ${lastNameIn.value} !\nVotre adresse est bien enregistrée`);
 
- lastNameIn.value = "";
- firstNameIn.value = "";
- mailIn.value = "";
-});
+    // Nettoyage du formulaire apres validation
+
+    lastNameIn.value = "";
+    firstNameIn.value = "";
+    mailIn.value = "";
+    }
+else { alert("Merci de compléter tous les champs")};
+
+})
+
+
 
 
 
