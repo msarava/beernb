@@ -1,51 +1,80 @@
+
+// MAJ de la page bar d'apres le tableau d'objet barList
+
 const barList = [
     
     {
-        pictureBar: "/assets/19143272_1205279886242831_4465527839130197464_o.jpg",
+        pictureBar: "url(/assets/19143272_1205279886242831_4465527839130197464_o.jpg)",
         nameBar: "The Smoking Barrel",
         textBar:"Bar d’ambiance au cœur du quartier Saint Cyp, belle carte de cocktails, originales bières pression et vins du sud ouest tapas maison et de saisons .L’ambiance y est joviale et chaleureuse !",
-        openBar:"17:00 - 02:00",
-        adressBar :"5 Pl. Jean Diebold, 31300",
-        telBar:"05 31 22 32 95",
-        latBar : "43.597643165207685",
-        longBar: "1.4290755653899188",
+        openBar:"Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 5 Pl. Jean Diebold, 31300 <br> Téléphone : 05 31 22 32 95",
+        latBar : 43.597643165207685,
+        longBar: 1.4290755653899188,
     },
 
     {
-        pictureBar: "assets/bistrologue.jpg",
+        pictureBar: "url(assets/bistrologue.jpg)",
         nameBar: "Le Bistrologue",
         textBar:"Le Bistrologue est un bar à tapas festif où vous pourrez déguster des mini plats accompagnés de délicieuses bières belges.",
-        openBar:"16:00 - 02:00",
-        adressBar :"8 Pl. du Pont Neuf, 31000",
-        telBar:"05 61 52 66 80",
-        latBar : "43,5995030",
-        longBar: "1,1,4332711",
+        openBar:"Horraires d’ouverture : 16:00 - 02:00 <br> Adresse : 2 Pl. du Ravelin, 31300<br> Téléphone : 05 61 52 66 80",
+        latBar : 43.5987240, 
+        longBar: 1.4287731,
     }
 
     ,{
-        pictureBar: "/assets/vasco-le-gamme.png",
+        pictureBar: "url(/assets/vasco-le-gamme.png)",
         nameBar: "Vasco Le Gamma",
         textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
-        openBar:"17:00 - 02:00",
-        adressBar :"2 Pl. du Ravelin, 31300",
-        telBar:"05 61 52 66 80",
-        latBar : "43,5987501",
-        longBar: "1,4406775",
+        openBar:"Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 1 Pl. de l'Estrapade, 31300 <br> Téléphone : 05 61 52 66 80",
+        latBar : 43.5987501,
+        longBar: 1.4332711,
     },
 
     {
-        pictureBar: "assets/cachuete-lmq.jpg",
+        pictureBar: "url(assets/cachuete-lmq.jpg)",
         nameBar: "La Cacahuète",
         textBar:"Cacahuète. Quelque chose de simple et qui reprend cette tradition des bars aux noms un peu particuliers, sans pour autant tomber dans l’alambiqué ! Et il faut dire que pour évoquer l’apéro, difficile de penser à quelque chose de plus approprié.",
-        openBar:"08:00 - 02:00",
-        adressBar :"21 rue Réclusane, 31300",
-        telBar:"09 85 00 96 15",
-        latBar : "43,5987140",
-        longBar: "1,4328430",
+        openBar:"Horraires d’ouverture : 08:00 - 02:00 <br> Adresse : 21 rue Réclusane, 31300 <br> Téléphone : 09 85 00 96 15",
+        latBar : 43.5987140,
+        longBar: 1.4328430,
     }
 ]
 
+const queryParams=window.location.search.split("?")[1].split("&").map(element =>element.split("=")).reduce((memo, value)=>{memo[value[0]] = value[1]; return memo},{});
 
+/* Méthode alternative :
+
+const queryParamsArrayOfKeysAndValues=window.location.search.split("?")[1].split("&").map(element =>element.split("="));
+/const queryParams={};
+
+queryParamsArrayOfKeysAndValues.forEach(([key, value])=>{
+    queryParams[key]=value;
+})
+
+queryParamsArrayOfKeysAndValues.forEach((value)=>{
+
+    queryParams[value[0]]=value[1]
+ })
+
+*/
+
+const barIndex=queryParams.barIndex;
+const barData=barList[barIndex];
+
+// MAJ Nom du bar
+const barNameElement= document.querySelector("#barName");
+barNameElement.innerText=barData.nameBar;
+
+// // MAJ Texte du bar
+const barTextElement= document.querySelector("#barText");
+barTextElement.innerText=barData.textBar;
+
+// // MAJ Image du bar
+const barPicDivElement= document.querySelector(".card");
+barPicDivElement.style.backgroundImage=barData.pictureBar;
+
+const barOpen=document.querySelector("#barOpen");
+barOpen.innerHTML=barData.openBar;
 
 
 
@@ -67,14 +96,17 @@ window.addEventListener('scroll', function(){
 })
 
 
-var lat = 43.597643165207685;
-var lon = 1.4290755653899188;
+// var lat = 43.597643165207685;
+// var lon = 1.4290755653899188;
+
+var lat = barData.latBar;
+var lon = barData.longBar;
 var macarte = null;
 // Fonction d'initialisation de la carte
 function initMap() {
     // Créer l'objet "macarte" et l'insèrer dans l'élément HTML qui a l'ID "map"
     macarte = L.map('map').setView([lat, lon], 16);
-    L.marker([43.597643165207685, 1.4290755653899188]).addTo(macarte);
+    L.marker([lat,lon]).addTo(macarte);
     // Leaflet ne récupère pas les cartes (tiles) sur un serveur par défaut. Nous devons lui préciser où nous souhaitons les récupérer. Ici, openstreetmap.fr
     L.tileLayer('https://{s}.tile.openstreetmap.fr/osmfr/{z}/{x}/{y}.png', {
         // Il est toujours bien de laisser le lien vers la source des données
@@ -192,69 +224,6 @@ btnRainbow.addEventListener('click', function(){
    
 })
 
-
-
-
-
-const queryParams=window.location.search.split("?")[1].split("&").map(element =>element.split("=")).reduce((memo, value)=>{memo[value[0]] = value[1]; return memo},{});
-
-// const queryParamsArrayOfKeysAndValues=window.location.search.split("?")[1].split("&").map(element =>element.split("="));
-// const queryParams={};
-
-
-// queryParamsArrayOfKeysAndValues.forEach(([key, value])=>{
-//     queryParams[key]=value;
-// })
-
-
-
-// queryParamsArrayOfKeysAndValues.forEach((value)=>{
-
-//     queryParams[value[0]]=value[1]
-
-// })
-
-const barIndex=queryParams.barIndex;
-const barData=barList[barIndex];
-
-// MAJ Nom du bar
-const barNameElement= document.querySelector("#barName");
-barNameElement.innerText=barData.nameBar;
-
-// // MAJ Texte du bar
-const barTextElement= document.querySelector("#barText");
-barTextElement.innerText=barData.textBar;
-
-// // MAJ Image du bar
-const barPicDivElement= document.querySelector(".card");
-
-
-
-
-
-
-
-
-
-
-// const quartiersBtn = document.querySelector("#dropbtn")
-// const menuBox =document.querySelector('.menu__box');
-// const quartierLi = document.querySelector('.dropdown_quartier')
-// const quartierA = document.querySelectorAll('.a-quartier')
-// const font = document.querySelector('#font')
-// let click = 0;
-// quartiersBtn.addEventListener('click', function(){
-//     click++
-//     quartierLi.classList.toggle('dropdown_quartier_visible');
-//     var classes = font.classList;
-//     if (click % 2 > 0){
-//     classes.replace("fa-hand-point-down", "fa-hand-point-up");
-//     }else {
-//     classes.replace("fa-hand-point-up", "fa-hand-point-down");
-//     }
-//    for (let a of quartierA){
-//     a.classList.toggle('a-quartier-visible')
-//    }
 // Etoiles du commentaire
 
 const star1=document.querySelector("#star1");
