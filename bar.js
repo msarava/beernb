@@ -22,7 +22,7 @@ const barList = [
     }
 
     ,{
-        pictureBar: "url(/assets/vasco-le-gamme.png)",
+        pictureBar: "url(/assets/vasco.png)",
         nameBar: "Vasco Le Gamma",
         textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
         openBar:"Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 1 Pl. de l'Estrapade, 31300 <br> Téléphone : 05 61 52 66 80",
