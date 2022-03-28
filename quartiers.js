@@ -26,8 +26,8 @@ if(window.innerWidth > 600) {
 const myCardUrl = {
     'card-smoking' : 'bar.html?barIndex=0',
     'card-bistrologue' : 'bar.html?barIndex=1',
-    'card-cacahuete' : 'bar.html?barIndex=2',
-    'card-gamma' : 'bar.html?barIndex=3',
+    'card-gamma' : 'bar.html?barIndex=2',
+    'card-cacahuete' : 'bar.html?barIndex=3',
 }
 
 const myClassCards = document.querySelectorAll('.card')
