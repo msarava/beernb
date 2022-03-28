@@ -4,7 +4,7 @@
 const barList = [
     
     {
-        pictureBar: "url(assets/19143272_1205279886242831_4465527839130197464_o.jpg)",
+        pictureBar: "url(./assets/19143272_1205279886242831_4465527839130197464_o.jpg)",
         nameBar: "The Smoking Barrel",
         textBar:"Bar d’ambiance au cœur du quartier Saint Cyp, belle carte de cocktails, originales bières pression et vins du sud ouest tapas maison et de saisons .L’ambiance y est joviale et chaleureuse !",
         openBar:"Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 5 Pl. Jean Diebold, 31300 <br> Téléphone : 05 31 22 32 95",
@@ -13,7 +13,7 @@ const barList = [
     },
 
     {
-        pictureBar: "url(assets/bistrologue.jpg)",
+        pictureBar: "url(./assets/bistrologue.jpg)",
         nameBar: "Le Bistrologue",
         textBar:"Le Bistrologue est un bar à tapas festif où vous pourrez déguster des mini plats accompagnés de délicieuses bières belges.",
         openBar:"Horraires d’ouverture : 16:00 - 02:00 <br> Adresse : 2 Pl. du Ravelin, 31300<br> Téléphone : 05 61 52 66 80",
@@ -22,7 +22,7 @@ const barList = [
     }
 
     ,{
-        pictureBar: "url(/assets/vasco.png)",
+        pictureBar: "url(./assets/vasco.png)",
         nameBar: "Vasco Le Gamma",
         textBar:"Bar culturel et intergénérationnel, lieu de mixité sociale et culturelle. Pour en savoir plus, venez le découvrir et le redécouvrir !",
         openBar:"Horraires d’ouverture : 17:00 - 02:00 <br> Adresse : 1 Pl. de l'Estrapade, 31300 <br> Téléphone : 05 61 52 66 80",
@@ -31,7 +31,7 @@ const barList = [
     },
 
     {
-        pictureBar: "url(assets/cachuete-lmq.jpg)",
+        pictureBar: "url(./assets/cachuete-lmq.jpg)",
         nameBar: "La Cacahuète",
         textBar:"Cacahuète. Quelque chose de simple et qui reprend cette tradition des bars aux noms un peu particuliers, sans pour autant tomber dans l’alambiqué ! Et il faut dire que pour évoquer l’apéro, difficile de penser à quelque chose de plus approprié.",
         openBar:"Horraires d’ouverture : 08:00 - 02:00 <br> Adresse : 21 rue Réclusane, 31300 <br> Téléphone : 09 85 00 96 15",
