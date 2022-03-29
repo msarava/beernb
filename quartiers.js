@@ -38,5 +38,4 @@ for(let myClassCard of myClassCards){
         })
 } 
 
-/* Mene DropDown du menu burger */
 

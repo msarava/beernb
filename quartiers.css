@@ -123,19 +123,19 @@ body{
 }
 
 .card-bistrologue {
-    background-image: url(assets/bistrologue.jpg);
+    background-image: url(./assets/bistrologue.jpg);
 }
 
 .card-gamma { 
-    background-image: url(assets/vasco-le-gamme.png); 
+    background-image: url(./assets/vasco.png); 
 }
 
 .card-cacahuete{    
-    background-image: url('https://www.le-meilleur-quartier.fr/wp-content/uploads/cachuete-lmq.jpg');
+    background-image: url(./assets/cachuete-lmq.jpg);
 }
 
 .card-smoking {
-    background-image: url(assets/19143272_1205279886242831_4465527839130197464_o.jpg);
+    background-image: url(./assets/19143272_1205279886242831_4465527839130197464_o.jpg);
 }
 
 .text-card {
